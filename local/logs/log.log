@@ -1,0 +1,15 @@
+2025-09-15 22:47:05 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [DivisionByZeroError] 
+Division by zero (0)
+/home/bitrix/www/debug_example.php:9
+----------
+
+2025-09-15 22:47:10 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [DivisionByZeroError] 
+Division by zero (0)
+/home/bitrix/www/debug_example.php:9
+----------
+
+2025-09-15 22:47:11 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [DivisionByZeroError] 
+Division by zero (0)
+/home/bitrix/www/debug_example.php:9
+----------
+
