@@ -1,0 +1,58 @@
+<?php
+namespace Otus\Custom;
+
+use Bitrix\Main\Localization\Loc;
+use Bitrix\Main\ORM\Data\DataManager;
+use Bitrix\Main\ORM\Fields\FloatField;
+use Bitrix\Main\ORM\Fields\IntegerField;
+use Models\AbstractIblockPropertyValuesTable;
+use Bitrix\Main\ORM\Fields\TextField;
+
+/**
+ * Class ElementPropS17Table
+ * 
+ * Fields:
+ * <ul>
+ * <li> IBLOCK_ELEMENT_ID int mandatory
+ * <li> PROPERTY_69 double optional
+ * </ul>
+ *
+ * @package Bitrix\Iblock
+ **/
+
+class PocedurePropertyValuesTable extends AbstractIblockPropertyValuesTable
+{
+
+    const IBLOCK_ID = 17;
+	/**
+	 * Returns DB table name for entity.
+	 *
+	 * @return string
+	 */
+	// public static function getTableName()
+	// {
+	// 	return 'b_iblock_element_prop_s17';
+	// }
+
+	// /**
+	//  * Returns entity map definition.
+	//  *
+	//  * @return array
+	//  */
+	// public static function getMap()
+	// {
+	// 	$map = [
+	// 		'IBLOCK_ELEMENT_ID' => (new IntegerField('IBLOCK_ELEMENT_ID',
+	// 				[]
+	// 			))->configureTitle(Loc::getMessage('ELEMENT_PROP_S17_ENTITY_IBLOCK_ELEMENT_ID_FIELD'))
+	// 					->configurePrimary(true)
+	// 		,
+			
+    //         'PRICE' => (new TextField('PRICE'))
+	// 				->configureTitle(Loc::getMessage('ELEMENT_PROP_S17_ENTITY_PROPERTY_69_FIELD'))
+	// 				->configureColumnName('PROPERTY_64'),
+	// 	];
+
+	// 	return parent::getMap() + $map;
+	// }
+}
