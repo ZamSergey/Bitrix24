@@ -6,7 +6,7 @@ $APPLICATION->SetAdditionalCSS('/local/h_test/style.css');
 use Bitrix\Main\Loader;
 use Bitrix\Iblock\Iblock;
 use Otus\Custom\DoctorPropertyValuesTable as DoctorCalss;
-// use Otus\Custom\PocedurePropertyValuesTable;
+use Otus\Custom\PocedurePropertyValuesTable as PocedureCalss;
 Loader::includeModule('iblock');
 
 $iblockId = 16;
@@ -20,13 +20,25 @@ $iblockElementId = 32;
 // ])
 // ->fetchCollection();
 
-// $doctors = DoctorCalss::query() 
-// ->setSelect(['IBLOCK_ELEMENT_ID', 'IBLOCK_PROPERTY_ID', 'VALUE'])
+// $doctors = DoctorCalss::query()
+//     ->setSelect(['ELEMENT'])
+    
+//     ->fetchCollection();
+    
+// $arDoctors = [];
+// foreach ($doctors as $doctor){
+//     $name = $doctor->getElement()->getName();
+    
+//     $arDoctors[]=[
+//             'NAME' => $name,
+//             'CODE' => $doctor->getElement()->getCode()
+            
+//     ];
+// }
 
-// ->fetch();
-// pr($doctors);
-
-
+// pr($arDoctors );
+// $doctorsTableMap = DoctorCalss::getMap();
+// pr($doctorsTableMap);
 //Эта работает
 // $cars = DoctorCalss::query()
 //     ->setSelect([
@@ -71,19 +83,85 @@ pr($path);
 
 //Еще одна попытка сделать запрос
 
-$elements = DoctorCalss::query() // car - cимвольный код API инфоблока
-    ->addSelect('NAME')   
-    ->addSelect('ID')
-    ->fetchCollection();
+// $elements = DoctorCalss::query() // car - cимвольный код API инфоблока
+//     ->addSelect('NAME')   
+//     ->addSelect('ID')
+//     ->fetchCollection();
 
-foreach ($elements as $key => $item) {
-    pr($item->getName().' '.$item->getId()); // получение значения свойства MODEL
+// foreach ($elements as $key => $item) {
+//     pr($item->getName().' '.$item->getId()); // получение значения свойства MODEL
     
-}
+// }
+
+// Добавление записей
+
+// $dbResult = DoctorCalss::add([
+//         'FIO'=>'TESTDOCTOR',       
+        
+        
+        
+// ]);
+// pr($dbResult);
+// echo \Bitrix\Iblock\Iblock::wakeUp(16)->getEntityDataClass();
+
+// $result = \Bitrix\Iblock\Elements\ElementDoctorsTable::add([
+//     'NAME' => "TESELEMENT" // MANUFACTURER свойства типа «Строка»
+// ]);
+
+// if ($result->isSuccess()) {
+//     $id = $result->getId();
+//     echo "Доктор добавлен, ID: $id";
+// } else {
+//     $errors = $result->getErrorMessages();
+//     echo "Ошибка добавления доктора: " . implode('; ', $errors);
+// }
 
 
+$docs2 = []; 
+$doctors = DoctorCalss::query() 
+->setSelect([    
+   
+    'NAME' => 'ELEMENT.NAME',
+    'CODE' => 'ELEMENT.CODE',
+    'PROCEDURES_MUL',
+    'ID' => 'ELEMENT.ID'
+])
+ ->setFilter( [
+             'CODE' => 'strugatskiy-o-e'           
+         ])
+->fetchAll();
 
+// foreach ($doctors as $doctor) {    
+//     $docs2[] = $doctor;
+//     $proc_ids = $doctor['PROCEDURES_MUL'];
+//     $procedures = PocedureCalss::query()
+//         ->setSelect([     
+           
+//             'NAME' => 'ELEMENT.NAME',
+//             'ID' => 'ELEMENT.ID'
+//         ])
+//         ->setFilter(array('ID' => $proc_ids))
+//         ->fetchAll();
 
+//     foreach ($procedures as $procedure) {    
+//         pr($procedure);
+//     }
+
+// }
+pr($doctors);
+// $proc_ids = ['35','33'];
+$procedures = PocedureCalss::query()
+->setSelect([     
+    '*', 
+    'NAME' => 'ELEMENT.NAME',
+    'ID' => 'ELEMENT.ID'
+])
+->setFilter(array('ID' => $proc_ids))
+->fetchAll();
+
+// foreach ($procedures as $procedure) {    
+//     pr($procedure);
+// }
 
 ?>
 <div class="cards-list">
@@ -97,7 +175,7 @@ foreach ($elements as $key => $item) {
 </div>
 
 
-<a href="./test">Test</a>
+<!-- <a href="./test">Test</a> -->
 
 <?
 

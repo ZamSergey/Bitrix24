@@ -657,3 +657,334 @@ Unknown field definition `NAME` (NAME) for \Otus\Custom\DoctorPropertyValues Ent
 	/home/bitrix/www/local/h_test/index.php:77
 ----------
 
+OTUS 2025-09-22 00:08:10 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `CODE` (CODE) for \Otus\Custom\DoctorPropertyValues Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#5: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/local/h_test/index.php:26
+----------
+
+OTUS 2025-09-22 00:13:25 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `CODE` (CODE) for \Otus\Custom\DoctorPropertyValues Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1052
+#5: Bitrix\Main\ORM\Query\Query->fetchCollection
+	/home/bitrix/www/local/h_test/index.php:26
+----------
+
+OTUS 2025-09-22 00:13:48 - Host: 192.168.1.185:80 - FATAL - [ErrorException] E_ERROR
+ob_start(): Cannot use output buffering in output buffering display handlers (0)
+/home/bitrix/www/bitrix/components/bitrix/ui.toolbar/class.php:53
+----------
+
+OTUS 2025-09-22 00:13:53 - Host: 192.168.1.185:80 - FATAL - [ErrorException] E_ERROR
+ob_start(): Cannot use output buffering in output buffering display handlers (0)
+/home/bitrix/www/bitrix/components/bitrix/ui.toolbar/class.php:53
+----------
+
+OTUS 2025-09-22 00:14:05 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `CODE` (CODE) for \Otus\Custom\DoctorPropertyValues Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1052
+#5: Bitrix\Main\ORM\Query\Query->fetchCollection
+	/home/bitrix/www/local/h_test/index.php:26
+----------
+
+OTUS 2025-09-23 21:45:03 - Host:  - UNCAUGHT_EXCEPTION - [Bitrix\Main\DB\ConnectionException] 
+Mysql connect error [localhost]: (2002) No such file or directory (400)
+/home/bitrix/www/bitrix/modules/main/lib/db/mysqliconnection.php:86
+#0: Bitrix\Main\DB\MysqliConnection->connectInternal
+	/home/bitrix/www/bitrix/modules/main/lib/data/connection.php:53
+#1: Bitrix\Main\Data\Connection->getResource
+	/home/bitrix/www/bitrix/modules/main/lib/db/mysqlisqlhelper.php:409
+#2: Bitrix\Main\DB\MysqliSqlHelper->forSql
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:210
+#3: Bitrix\Main\Config\Option::load
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:83
+#4: Bitrix\Main\Config\Option::getRealValue
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:32
+#5: Bitrix\Main\Config\Option::get
+	/home/bitrix/www/bitrix/modules/main/lib/httprequest.php:422
+#6: Bitrix\Main\HttpRequest->prepareCookie
+	/home/bitrix/www/bitrix/modules/main/lib/httprequest.php:70
+#7: Bitrix\Main\HttpRequest->__construct
+	/home/bitrix/www/bitrix/modules/main/lib/httpapplication.php:39
+#8: Bitrix\Main\HttpApplication->initializeContext
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:130
+#9: Bitrix\Main\Application->initializeExtendedKernel
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#10: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#11: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS 2025-09-23 21:52:49 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "DoctorTable" not found (0)
+/home/bitrix/www/local/h_test/index.php:86
+----------
+
+OTUS 2025-09-23 21:53:58 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "DoctorsTable" not found (0)
+/home/bitrix/www/local/h_test/index.php:86
+----------
+
+OTUS 2025-09-23 21:54:45 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `CODE` (CODE) for \Otus\Custom\DoctorPropertyValues Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1052
+#5: Bitrix\Main\ORM\Query\Query->fetchCollection
+	/home/bitrix/www/local/h_test/index.php:26
+----------
+
+OTUS 2025-09-23 21:55:13 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `CODE` (CODE) for \Otus\Custom\DoctorPropertyValues Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#5: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/local/h_test/index.php:26
+----------
+
+OTUS 2025-09-23 22:03:55 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CarsTable" not found (0)
+/home/bitrix/www/local/h_test/index.php:86
+----------
+
+OTUS 2025-09-23 22:04:24 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "DoctorCalssTable" not found (0)
+/home/bitrix/www/local/h_test/index.php:86
+----------
+
+OTUS 2025-09-23 22:23:59 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Bitrix\Iblock\Elements\ElementPhpapiTable" not found (0)
+/home/bitrix/www/local/h_test/index.php:95
+----------
+
+OTUS 2025-09-23 22:24:42 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function pp() (0)
+/home/bitrix/www/local/h_test/index.php:99
+----------
+
+OTUS 2025-09-23 22:26:45 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `ID` (ID) for \Otus\Custom\DoctorPropertyValues Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:499
+#5: Bitrix\Main\ORM\Data\DataManager::getList
+	/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:350
+#6: Bitrix\Main\ORM\Data\DataManager::getByPrimary
+	/home/bitrix/www/local/h_test/index.php:95
+----------
+
+OTUS 2025-09-23 22:38:13 - Host: 192.168.1.185:80 - FATAL - [ErrorException] E_ERROR
+ob_start(): Cannot use output buffering in output buffering display handlers (0)
+/home/bitrix/www/bitrix/components/bitrix/ui.toolbar/class.php:53
+----------
+
+OTUS 2025-09-24 22:32:01 - Host:  - FATAL - [ErrorException] E_COMPILE_ERROR
+Declaration of Otus\Custom\PocedurePropertyValuesTable::getMap() must be compatible with Models\AbstractIblockPropertyValuesTable::getMap(): array (0)
+/home/bitrix/www/local/php_interface/src/app/Models/Lists/PocedurePropertyValuesTable.php:42
+----------
+
+OTUS 2025-09-24 22:33:01 - Host:  - FATAL - [ErrorException] E_COMPILE_ERROR
+Declaration of Otus\Custom\PocedurePropertyValuesTable::getMap() must be compatible with Models\AbstractIblockPropertyValuesTable::getMap(): array (0)
+/home/bitrix/www/local/php_interface/src/app/Models/Lists/PocedurePropertyValuesTable.php:42
+----------
+
+OTUS 2025-09-24 22:42:59 - Host: 192.168.1.185:80 - FATAL - [ErrorException] E_COMPILE_ERROR
+Declaration of Otus\Custom\PocedurePropertyValuesTable::getMap() must be compatible with Models\AbstractIblockPropertyValuesTable::getMap(): array (0)
+/home/bitrix/www/local/php_interface/src/app/Models/Lists/PocedurePropertyValuesTable.php:60
+----------
+
+OTUS 2025-09-24 22:43:00 - Host: 192.168.1.185:80 - FATAL - [ErrorException] E_COMPILE_ERROR
+Declaration of Otus\Custom\PocedurePropertyValuesTable::getMap() must be compatible with Models\AbstractIblockPropertyValuesTable::getMap(): array (0)
+/home/bitrix/www/local/php_interface/src/app/Models/Lists/PocedurePropertyValuesTable.php:60
+----------
+
+OTUS 2025-09-24 22:43:01 - Host:  - FATAL - [ErrorException] E_COMPILE_ERROR
+Declaration of Otus\Custom\PocedurePropertyValuesTable::getMap() must be compatible with Models\AbstractIblockPropertyValuesTable::getMap(): array (0)
+/home/bitrix/www/local/php_interface/src/app/Models/Lists/PocedurePropertyValuesTable.php:60
+----------
+
+OTUS 2025-09-24 22:43:37 - Host: 192.168.1.185:80 - FATAL - [ErrorException] E_COMPILE_ERROR
+Declaration of Otus\Custom\PocedurePropertyValuesTable::getMap() must be compatible with Models\AbstractIblockPropertyValuesTable::getMap(): array (0)
+/home/bitrix/www/local/php_interface/src/app/Models/Lists/PocedurePropertyValuesTable.php:60
+----------
+
+OTUS 2025-09-24 22:43:52 - Host: 192.168.1.185:80 - FATAL - [ErrorException] E_COMPILE_ERROR
+Declaration of Otus\Custom\PocedurePropertyValuesTable::getMap() must be compatible with Models\AbstractIblockPropertyValuesTable::getMap(): array (0)
+/home/bitrix/www/local/php_interface/src/app/Models/Lists/PocedurePropertyValuesTable.php:60
+----------
+
+OTUS 2025-09-24 22:43:57 - Host: 192.168.1.185:80 - FATAL - [ErrorException] E_COMPILE_ERROR
+Declaration of Otus\Custom\PocedurePropertyValuesTable::getMap() must be compatible with Models\AbstractIblockPropertyValuesTable::getMap(): array (0)
+/home/bitrix/www/local/php_interface/src/app/Models/Lists/PocedurePropertyValuesTable.php:60
+----------
+
+OTUS 2025-09-24 22:44:01 - Host:  - FATAL - [ErrorException] E_COMPILE_ERROR
+Declaration of Otus\Custom\PocedurePropertyValuesTable::getMap() must be compatible with Models\AbstractIblockPropertyValuesTable::getMap(): array (0)
+/home/bitrix/www/local/php_interface/src/app/Models/Lists/PocedurePropertyValuesTable.php:60
+----------
+
+OTUS 2025-09-24 22:44:02 - Host: 192.168.1.185:80 - FATAL - [ErrorException] E_COMPILE_ERROR
+Declaration of Otus\Custom\PocedurePropertyValuesTable::getMap() must be compatible with Models\AbstractIblockPropertyValuesTable::getMap(): array (0)
+/home/bitrix/www/local/php_interface/src/app/Models/Lists/PocedurePropertyValuesTable.php:60
+----------
+
+OTUS 2025-09-24 22:44:53 - Host: 192.168.1.185:80 - FATAL - [ErrorException] E_COMPILE_ERROR
+Declaration of Otus\Custom\PocedurePropertyValuesTable::getMap() must be compatible with Models\AbstractIblockPropertyValuesTable::getMap(): array (0)
+/home/bitrix/www/local/php_interface/src/app/Models/Lists/PocedurePropertyValuesTable.php:42
+----------
+
+OTUS 2025-09-24 22:45:02 - Host:  - FATAL - [ErrorException] E_COMPILE_ERROR
+Declaration of Otus\Custom\PocedurePropertyValuesTable::getMap() must be compatible with Models\AbstractIblockPropertyValuesTable::getMap(): array (0)
+/home/bitrix/www/local/php_interface/src/app/Models/Lists/PocedurePropertyValuesTable.php:42
+----------
+
+OTUS 2025-09-24 22:45:44 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `ELEMENT` (ELEMENT) for \Otus\Custom\DoctorPropertyValues Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1052
+#5: Bitrix\Main\ORM\Query\Query->fetchCollection
+	/home/bitrix/www/local/h_test/index.php:26
+----------
+
+OTUS 2025-09-24 22:58:29 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown method `getSurname` for object `Bitrix\Iblock\EO_Element` (0)
+/home/bitrix/www/bitrix/modules/main/lib/orm/objectify/entityobject.php:1366
+#0: Bitrix\Main\ORM\Objectify\EntityObject->__call
+	/home/bitrix/www/local/h_test/index.php:35
+----------
+
+OTUS 2025-09-24 23:10:54 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `ELEMENT` (ELEMENT) for \Otus\Custom\DoctorPropertyValues Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1052
+#5: Bitrix\Main\ORM\Query\Query->fetchCollection
+	/home/bitrix/www/local/h_test/index.php:26
+----------
+
+OTUS 2025-09-30 22:16:56 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Custom\ReferenceField" not found (0)
+/home/bitrix/www/local/php_interface/src/app/Models/Lists/PocedurePropertyValuesTable.php:75
+#0: Otus\Custom\PocedurePropertyValuesTable::getMap
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:232
+#1: Bitrix\Main\ORM\Entity->initialize
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:129
+#2: Bitrix\Main\ORM\Entity::getInstanceDirect
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:108
+#3: Bitrix\Main\ORM\Entity::getInstance
+	/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:70
+#4: Bitrix\Main\ORM\Data\DataManager::getEntity
+	/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:548
+#5: Bitrix\Main\ORM\Data\DataManager::query
+	/home/bitrix/www/local/h_test/index.php:137
+----------
+
+OTUS 2025-09-30 22:30:35 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `ID` (ID) for \Otus\Custom\PocedurePropertyValues Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1381
+#1: Bitrix\Main\ORM\Query\Query->setFilterChains
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2479
+#2: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#3: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#4: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/local/h_test/index.php:141
+----------
+
+OTUS 2025-09-30 22:47:22 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to a member function getName() on array (0)
+/home/bitrix/www/otus/homework3/index.php:47
+----------
+
+OTUS 2025-09-30 22:55:08 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `ACTIVE` (ACTIVE) for \Otus\Custom\DoctorPropertyValues Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1381
+#1: Bitrix\Main\ORM\Query\Query->setFilterChains
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2479
+#2: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#3: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#4: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework3/index.php:105
+----------
+
