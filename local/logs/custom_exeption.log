@@ -988,3 +988,755 @@ Unknown field definition `ACTIVE` (ACTIVE) for \Otus\Custom\DoctorPropertyValues
 	/home/bitrix/www/otus/homework3/index.php:105
 ----------
 
+OTUS 2025-10-05 14:24:51 - Host:  - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Orm\AuthorTable" not found (0)
+/home/bitrix/www/local/php_interface/console/install-custom-orm.php:34
+----------
+
+OTUS 2025-10-09 22:15:13 - Host:  - UNCAUGHT_EXCEPTION - [Error] 
+Class "ProviderTable" not found (0)
+/home/bitrix/www/local/php_interface/console/install-my-orm.php:30
+----------
+
+OTUS 2025-10-09 22:18:28 - Host:  - UNCAUGHT_EXCEPTION - [Error] 
+Class "ProviderTable" not found (0)
+/home/bitrix/www/local/php_interface/console/install-my-orm.php:30
+----------
+
+OTUS 2025-10-09 22:32:27 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `ELEMENT` (ELEMENT.*) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1153
+#1: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#2: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#3: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#4: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:34
+----------
+
+OTUS 2025-10-09 22:35:23 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `FATS` (FATS) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#5: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:38
+----------
+
+OTUS 2025-10-09 22:43:52 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `PUBLISHER` (PUBLISHER.*) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1153
+#1: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#2: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#3: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#4: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:39
+----------
+
+OTUS 2025-10-09 22:50:14 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `PUBLISHER` (PUBLISHER.*) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1153
+#1: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#2: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#3: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#4: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:39
+----------
+
+OTUS 2025-10-09 22:50:48 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `ELEMENT` (ELEMENT.*) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1153
+#1: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#2: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#3: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#4: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:39
+----------
+
+OTUS 2025-10-09 23:10:36 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\DB\SqlQueryException] 
+Mysql query error: (1054) Unknown column 'otus_orm_apartmentcomplex_developer.DEVELOPER_NAME' in 'field list' (400)
+SELECT 
+	`otus_orm_apartmentcomplex`.`ID` AS `ID`,
+	`otus_orm_apartmentcomplex`.`TITLE` AS `TITLE`,
+	`otus_orm_apartmentcomplex`.`FLATS` AS `FLATS`,
+	`otus_orm_apartmentcomplex`.`BUILD_DATE` AS `BUILD_DATE`,
+	`otus_orm_apartmentcomplex`.`DESCRIPTION` AS `DESCRIPTION`,
+	`otus_orm_apartmentcomplex`.`DEVELOPER_ID` AS `DEVELOPER_ID`,
+	`otus_orm_apartmentcomplex_developer`.`DEVELOPER_NAME` AS `DEVELOPER_NAME`,
+	`otus_orm_apartmentcomplex_developer`.`IBLOCK_ELEMENT_ID` AS `UALIAS_0`
+FROM `apartment_complex` `otus_orm_apartmentcomplex` 
+INNER JOIN `b_iblock_element_prop_s19` `otus_orm_apartmentcomplex_developer` ON `otus_orm_apartmentcomplex`.`DEVELOPER_ID` = `otus_orm_apartmentcomplex_developer`.`IBLOCK_ELEMENT_ID`
+/home/bitrix/www/bitrix/modules/main/lib/db/mysqlcommonconnection.php:415
+#0: Bitrix\Main\DB\MysqlCommonConnection->createQueryException
+	/home/bitrix/www/bitrix/modules/main/lib/db/mysqliconnection.php:149
+#1: Bitrix\Main\DB\MysqliConnection->queryInternal
+	/home/bitrix/www/bitrix/modules/main/lib/db/connection.php:324
+#2: Bitrix\Main\DB\Connection->query
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3601
+#3: Bitrix\Main\ORM\Query\Query->query
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:972
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#5: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:41
+----------
+
+OTUS 2025-10-09 23:11:20 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `DEVELOPER_NAME` (DEVELOPER.DEVELOPER_NAME) for \Otus\Orm\Provider Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#5: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:41
+----------
+
+OTUS 2025-10-09 23:18:19 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `NAME` (DEVELOPER.NAME) for \Otus\Orm\Provider Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#5: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:43
+----------
+
+OTUS 2025-10-09 23:18:48 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `ELEMENT` (DEVELOPER.ELEMENT.*) for \Otus\Orm\Provider Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1153
+#1: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#2: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#3: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#4: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:43
+----------
+
+OTUS 2025-10-09 23:19:10 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `IBLOC_ELEMENT` (DEVELOPER.IBLOC_ELEMENT.*) for \Otus\Orm\Provider Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1153
+#1: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#2: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#3: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#4: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:43
+----------
+
+OTUS 2025-10-09 23:27:21 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Orm\Reference" not found (0)
+/home/bitrix/www/local/php_interface/src/Orm/ProviderTable.php:57
+#0: Otus\Orm\ProviderTable::getMap
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:232
+#1: Bitrix\Main\ORM\Entity->initialize
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:129
+#2: Bitrix\Main\ORM\Entity::getInstanceDirect
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:108
+#3: Bitrix\Main\ORM\Entity::getInstance
+	/home/bitrix/www/bitrix/modules/main/lib/orm/fields/relations/relation.php:83
+#4: Bitrix\Main\ORM\Fields\Relations\Relation->getRefEntity
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:241
+#5: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1153
+#6: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#7: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#8: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#9: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:43
+----------
+
+OTUS 2025-10-09 23:27:52 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Orm\Join" not found (0)
+/home/bitrix/www/local/php_interface/src/Orm/ProviderTable.php:61
+#0: Otus\Orm\ProviderTable::getMap
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:232
+#1: Bitrix\Main\ORM\Entity->initialize
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:129
+#2: Bitrix\Main\ORM\Entity::getInstanceDirect
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:108
+#3: Bitrix\Main\ORM\Entity::getInstance
+	/home/bitrix/www/bitrix/modules/main/lib/orm/fields/relations/relation.php:83
+#4: Bitrix\Main\ORM\Fields\Relations\Relation->getRefEntity
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:241
+#5: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1153
+#6: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#7: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#8: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#9: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:43
+----------
+
+OTUS 2025-10-09 23:28:19 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `NAME` (DEVELOPER.ELEMENT.NAME) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#5: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:43
+----------
+
+OTUS 2025-10-09 23:28:41 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `CODE` (DEVELOPER.ELEMENT.CODE) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#5: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:43
+----------
+
+OTUS 2025-10-09 23:42:14 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\DB\SqlQueryException] 
+Mysql query error: (1066) Not unique table/alias: 'otus_orm_apartmentcomplex_developer_element' (400)
+SELECT 
+	`otus_orm_apartmentcomplex`.`ID` AS `ID`,
+	`otus_orm_apartmentcomplex`.`TITLE` AS `TITLE`,
+	`otus_orm_apartmentcomplex`.`FLATS` AS `FLATS`,
+	`otus_orm_apartmentcomplex`.`BUILD_DATE` AS `BUILD_DATE`,
+	`otus_orm_apartmentcomplex`.`DESCRIPTION` AS `DESCRIPTION`,
+	`otus_orm_apartmentcomplex`.`DEVELOPER_ID` AS `DEVELOPER_ID`,
+	`otus_orm_apartmentcomplex_developer`.`PROPERTY_73` AS `DEVELOPER_TOWN`,
+	`otus_orm_apartmentcomplex_developer`.`PROPERTY_74` AS `DEVELOPER_REC`,
+	`otus_orm_apartmentcomplex_developer_element`.`NAME` AS `DEVELOPER_NAME`,
+	`otus_orm_apartmentcomplex_developer_element`.`CODE` AS `DEVELOPER_CODE`,
+	`otus_orm_apartmentcomplex_developer_element`.`NAME` AS `test`,
+	`otus_orm_apartmentcomplex_developer`.`IBLOCK_ELEMENT_ID` AS `UALIAS_2`,
+	`otus_orm_apartmentcomplex_developer_element`.`ID` AS `UALIAS_3`,
+	`otus_orm_apartmentcomplex_developer_element`.`ID` AS `UALIAS_4`
+FROM `apartment_complex` `otus_orm_apartmentcomplex` 
+INNER JOIN `b_iblock_element_prop_s19` `otus_orm_apartmentcomplex_developer` ON `otus_orm_apartmentcomplex`.`DEVELOPER_ID` = `otus_orm_apartmentcomplex_developer`.`IBLOCK_ELEMENT_ID`
+INNER JOIN `b_iblock_element` `otus_orm_apartmentcomplex_developer_element` ON `otus_orm_apartmentcomplex_developer`.`IBLOCK_ELEMENT_ID` = `otus_orm_apartmentcomplex_developer_element`.`ID`
+INNER JOIN `b_iblock_element` `otus_orm_apartmentcomplex_developer_element` ON `otus_orm_apartmentcomplex`.`DEVELOPER_ID` = `otus_orm_apartmentcomplex_developer_element`.`ID`
+/home/bitrix/www/bitrix/modules/main/lib/db/mysqlcommonconnection.php:415
+#0: Bitrix\Main\DB\MysqlCommonConnection->createQueryException
+	/home/bitrix/www/bitrix/modules/main/lib/db/mysqliconnection.php:149
+#1: Bitrix\Main\DB\MysqliConnection->queryInternal
+	/home/bitrix/www/bitrix/modules/main/lib/db/connection.php:324
+#2: Bitrix\Main\DB\Connection->query
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3601
+#3: Bitrix\Main\ORM\Query\Query->query
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:972
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#5: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:45
+----------
+
+OTUS 2025-10-09 23:44:24 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `TOWN` (DEVELOPER.TOWN) for \Bitrix\Iblock\Element Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#5: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:47
+----------
+
+OTUS 2025-10-11 15:44:34 - Host:  - UNCAUGHT_EXCEPTION - [Error] 
+Call to a member function isTableExists() on null (0)
+/home/bitrix/www/local/php_interface/console/install-my-orm.php:39
+----------
+
+OTUS 2025-10-11 15:56:31 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Orm\Reference" not found (0)
+/home/bitrix/www/local/php_interface/src/Orm/ColorTable.php:57
+#0: Otus\Orm\ColorTable::getMap
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:232
+#1: Bitrix\Main\ORM\Entity->initialize
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:129
+#2: Bitrix\Main\ORM\Entity::getInstanceDirect
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:108
+#3: Bitrix\Main\ORM\Entity::getInstance
+	/home/bitrix/www/bitrix/modules/main/lib/orm/fields/relations/relation.php:83
+#4: Bitrix\Main\ORM\Fields\Relations\Relation->getRefEntity
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:253
+#5: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#6: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#7: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#8: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#9: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#10: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:45
+----------
+
+OTUS 2025-10-11 15:58:01 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Orm\Reference" not found (0)
+/home/bitrix/www/local/php_interface/src/Orm/ColorTable.php:57
+#0: Otus\Orm\ColorTable::getMap
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:232
+#1: Bitrix\Main\ORM\Entity->initialize
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:129
+#2: Bitrix\Main\ORM\Entity::getInstanceDirect
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:108
+#3: Bitrix\Main\ORM\Entity::getInstance
+	/home/bitrix/www/bitrix/modules/main/lib/orm/fields/relations/relation.php:83
+#4: Bitrix\Main\ORM\Fields\Relations\Relation->getRefEntity
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:253
+#5: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#6: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#7: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#8: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#9: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#10: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:45
+----------
+
+OTUS 2025-10-11 15:58:50 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\DB\SqlQueryException] 
+Mysql query error: (1054) Unknown column 'otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex.COLOR_IBLOCK_ELEMENT_ID' in 'field list' (400)
+SELECT 
+	`otus_orm_apartmentcomplex`.`ID` AS `ID`,
+	`otus_orm_apartmentcomplex`.`TITLE` AS `TITLE`,
+	`otus_orm_apartmentcomplex`.`FLATS` AS `FLATS`,
+	`otus_orm_apartmentcomplex`.`BUILD_DATE` AS `BUILD_DATE`,
+	`otus_orm_apartmentcomplex`.`DESCRIPTION` AS `DESCRIPTION`,
+	`otus_orm_apartmentcomplex`.`DEVELOPER_ID` AS `DEVELOPER_ID`,
+	`otus_orm_apartmentcomplex_developer`.`PROPERTY_73` AS `DEVELOPER_TOWN`,
+	`otus_orm_apartmentcomplex_developer`.`PROPERTY_74` AS `DEVELOPER_REC`,
+	`otus_orm_apartmentcomplex_developer_element`.`NAME` AS `DEVELOPER_NAME`,
+	`otus_orm_apartmentcomplex_developer_element`.`CODE` AS `DEVELOPER_CODE`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color`.`IBLOCK_ELEMENT_ID` AS `OTUS_ORM_APARTMENTCOMPLEX_COLORS_IBLOCK_ELEMENT_ID`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color`.`PROPERTY_75` AS `OTUS_ORM_APARTMENTCOMPLEX_COLORS_COLOR_NAME`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color`.`PROPERTY_76` AS `OTUS_ORM_APARTMENTCOMPLEX_COLORS_COLOR_CODE`,
+	`otus_orm_apartmentcomplex_developer`.`IBLOCK_ELEMENT_ID` AS `UALIAS_1`,
+	`otus_orm_apartmentcomplex_developer_element`.`ID` AS `UALIAS_2`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex`.`APARTMENT_ID` AS `UALIAS_3`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex`.`COLOR_IBLOCK_ELEMENT_ID` AS `UALIAS_4`
+FROM `apartment_complex` `otus_orm_apartmentcomplex` 
+INNER JOIN `b_iblock_element_prop_s19` `otus_orm_apartmentcomplex_developer` ON `otus_orm_apartmentcomplex`.`DEVELOPER_ID` = `otus_orm_apartmentcomplex_developer`.`IBLOCK_ELEMENT_ID`
+INNER JOIN `b_iblock_element` `otus_orm_apartmentcomplex_developer_element` ON `otus_orm_apartmentcomplex_developer`.`IBLOCK_ELEMENT_ID` = `otus_orm_apartmentcomplex_developer_element`.`ID`
+LEFT JOIN `my_apartment_color` `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex` ON `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex`.`APARTMENT_ID` = `otus_orm_apartmentcomplex`.`ID`
+LEFT JOIN `b_iblock_element_prop_s20` `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color` ON `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex`.`COLOR_IBLOCK_ELEMENT_ID` = `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color`.`IBLOCK_ELEMENT_ID`
+/home/bitrix/www/bitrix/modules/main/lib/db/mysqlcommonconnection.php:415
+#0: Bitrix\Main\DB\MysqlCommonConnection->createQueryException
+	/home/bitrix/www/bitrix/modules/main/lib/db/mysqliconnection.php:149
+#1: Bitrix\Main\DB\MysqliConnection->queryInternal
+	/home/bitrix/www/bitrix/modules/main/lib/db/connection.php:324
+#2: Bitrix\Main\DB\Connection->query
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3601
+#3: Bitrix\Main\ORM\Query\Query->query
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:972
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#5: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:45
+----------
+
+OTUS 2025-10-11 16:03:04 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Orm\ManyToMany" not found (0)
+/home/bitrix/www/local/php_interface/src/Orm/ColorTable.php:59
+#0: Otus\Orm\ColorTable::getMap
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:232
+#1: Bitrix\Main\ORM\Entity->initialize
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:129
+#2: Bitrix\Main\ORM\Entity::getInstanceDirect
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:108
+#3: Bitrix\Main\ORM\Entity::getInstance
+	/home/bitrix/www/bitrix/modules/main/lib/orm/fields/relations/relation.php:83
+#4: Bitrix\Main\ORM\Fields\Relations\Relation->getRefEntity
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:253
+#5: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#6: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#7: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#8: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#9: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#10: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:45
+----------
+
+OTUS 2025-10-11 16:03:47 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\DB\SqlQueryException] 
+Mysql query error: (1054) Unknown column 'otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex.COLOR_IBLOCK_ELEMENT_ID' in 'field list' (400)
+SELECT 
+	`otus_orm_apartmentcomplex`.`ID` AS `ID`,
+	`otus_orm_apartmentcomplex`.`TITLE` AS `TITLE`,
+	`otus_orm_apartmentcomplex`.`FLATS` AS `FLATS`,
+	`otus_orm_apartmentcomplex`.`BUILD_DATE` AS `BUILD_DATE`,
+	`otus_orm_apartmentcomplex`.`DESCRIPTION` AS `DESCRIPTION`,
+	`otus_orm_apartmentcomplex`.`DEVELOPER_ID` AS `DEVELOPER_ID`,
+	`otus_orm_apartmentcomplex_developer`.`PROPERTY_73` AS `DEVELOPER_TOWN`,
+	`otus_orm_apartmentcomplex_developer`.`PROPERTY_74` AS `DEVELOPER_REC`,
+	`otus_orm_apartmentcomplex_developer_element`.`NAME` AS `DEVELOPER_NAME`,
+	`otus_orm_apartmentcomplex_developer_element`.`CODE` AS `DEVELOPER_CODE`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color`.`IBLOCK_ELEMENT_ID` AS `OTUS_ORM_APARTMENTCOMPLEX_COLORS_IBLOCK_ELEMENT_ID`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color`.`PROPERTY_75` AS `OTUS_ORM_APARTMENTCOMPLEX_COLORS_COLOR_NAME`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color`.`PROPERTY_76` AS `OTUS_ORM_APARTMENTCOMPLEX_COLORS_COLOR_CODE`,
+	`otus_orm_apartmentcomplex_developer`.`IBLOCK_ELEMENT_ID` AS `UALIAS_1`,
+	`otus_orm_apartmentcomplex_developer_element`.`ID` AS `UALIAS_2`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex`.`APARTMENT_ID` AS `UALIAS_3`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex`.`COLOR_IBLOCK_ELEMENT_ID` AS `UALIAS_4`
+FROM `apartment_complex` `otus_orm_apartmentcomplex` 
+INNER JOIN `b_iblock_element_prop_s19` `otus_orm_apartmentcomplex_developer` ON `otus_orm_apartmentcomplex`.`DEVELOPER_ID` = `otus_orm_apartmentcomplex_developer`.`IBLOCK_ELEMENT_ID`
+INNER JOIN `b_iblock_element` `otus_orm_apartmentcomplex_developer_element` ON `otus_orm_apartmentcomplex_developer`.`IBLOCK_ELEMENT_ID` = `otus_orm_apartmentcomplex_developer_element`.`ID`
+LEFT JOIN `my_apartment_color` `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex` ON `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex`.`APARTMENT_ID` = `otus_orm_apartmentcomplex`.`ID`
+LEFT JOIN `b_iblock_element_prop_s20` `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color` ON `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex`.`COLOR_IBLOCK_ELEMENT_ID` = `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color`.`IBLOCK_ELEMENT_ID`
+/home/bitrix/www/bitrix/modules/main/lib/db/mysqlcommonconnection.php:415
+#0: Bitrix\Main\DB\MysqlCommonConnection->createQueryException
+	/home/bitrix/www/bitrix/modules/main/lib/db/mysqliconnection.php:149
+#1: Bitrix\Main\DB\MysqliConnection->queryInternal
+	/home/bitrix/www/bitrix/modules/main/lib/db/connection.php:324
+#2: Bitrix\Main\DB\Connection->query
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3601
+#3: Bitrix\Main\ORM\Query\Query->query
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:972
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#5: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:45
+----------
+
+OTUS 2025-10-11 16:20:57 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\ArgumentException] 
+Alias "COLORS" matches already existing field "COLORS" of initial entity "\Otus\Orm\Apartmentcomplex". Please choose another name for alias. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1281
+#0: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#1: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#2: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#3: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:45
+----------
+
+OTUS 2025-10-11 16:28:38 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to a member function exec() on array (0)
+/home/bitrix/www/otus/homework4/index.php:53
+----------
+
+OTUS 2025-10-11 16:34:03 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Query" not found (0)
+/home/bitrix/www/otus/homework4/index.php:51
+----------
+
+OTUS 2025-10-11 16:34:35 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "\BookTable" not found (0)
+/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:123
+#0: Bitrix\Main\ORM\Entity::getInstanceDirect
+	/home/bitrix/www/bitrix/modules/main/lib/orm/entity.php:108
+#1: Bitrix\Main\ORM\Entity::getInstance
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:259
+#2: Bitrix\Main\ORM\Query\Query->__construct
+	/home/bitrix/www/otus/homework4/index.php:52
+----------
+
+OTUS 2025-10-11 22:18:11 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `COLORS_IBLOCK_ELEMENT_ID` (COLORS_IBLOCK_ELEMENT_ID) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/otus/homework4/index.php:65
+----------
+
+OTUS 2025-10-11 22:19:45 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `COLORS_IBLOCK_ELEMENT_ID` (COLORS_IBLOCK_ELEMENT_ID) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:499
+#5: Bitrix\Main\ORM\Data\DataManager::getList
+	/home/bitrix/www/otus/homework4/index.php:94
+----------
+
+OTUS 2025-10-11 22:24:43 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `COLORS_IBLOCK_ELEMENT_ID` (COLORS_IBLOCK_ELEMENT_ID) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:499
+#5: Bitrix\Main\ORM\Data\DataManager::getList
+	/home/bitrix/www/otus/homework4/index.php:94
+----------
+
+OTUS 2025-10-11 22:27:58 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `COLORS_COLOR_NAME` (COLORS_COLOR_NAME) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:499
+#5: Bitrix\Main\ORM\Data\DataManager::getList
+	/home/bitrix/www/otus/homework4/index.php:94
+----------
+
+OTUS 2025-10-11 22:28:13 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `COLOR_NAME` (COLOR_NAME) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:499
+#5: Bitrix\Main\ORM\Data\DataManager::getList
+	/home/bitrix/www/otus/homework4/index.php:94
+----------
+
+OTUS 2025-10-11 22:40:09 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\DB\SqlQueryException] 
+Mysql query error: (1054) Unknown column 'otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex.COLOR_IBLOCK_ELEMENT_ID' in 'field list' (400)
+SELECT 
+	`otus_orm_apartmentcomplex`.`ID` AS `ID`,
+	`otus_orm_apartmentcomplex`.`TITLE` AS `TITLE`,
+	`otus_orm_apartmentcomplex`.`FLATS` AS `FLATS`,
+	`otus_orm_apartmentcomplex`.`DESCRIPTION` AS `DESCRIPTION`,
+	`otus_orm_apartmentcomplex`.`BUILD_DATE` AS `BUILD_DATE`,
+	`otus_orm_apartmentcomplex`.`DEVELOPER_ID` AS `DEVELOPER_ID`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color`.`IBLOCK_ELEMENT_ID` AS `OTUS_ORM_APARTMENTCOMPLEX_COLORS_IBLOCK_ELEMENT_ID`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color`.`PROPERTY_75` AS `OTUS_ORM_APARTMENTCOMPLEX_COLORS_COLOR_NAME`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color`.`PROPERTY_76` AS `OTUS_ORM_APARTMENTCOMPLEX_COLORS_COLOR_CODE`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex`.`APARTMENT_ID` AS `UALIAS_1`,
+	`otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex`.`COLOR_IBLOCK_ELEMENT_ID` AS `UALIAS_2`
+FROM `apartment_complex` `otus_orm_apartmentcomplex` 
+LEFT JOIN `my_apartment_color` `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex` ON `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex`.`APARTMENT_ID` = `otus_orm_apartmentcomplex`.`ID`
+LEFT JOIN `b_iblock_element_prop_s20` `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color` ON `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex`.`COLOR_IBLOCK_ELEMENT_ID` = `otus_orm_apartmentcomplex_mediator_from_apartmentcomplex_to_color_via_colors_apartmentcomplex_color`.`IBLOCK_ELEMENT_ID`
+/home/bitrix/www/bitrix/modules/main/lib/db/mysqlcommonconnection.php:415
+#0: Bitrix\Main\DB\MysqlCommonConnection->createQueryException
+	/home/bitrix/www/bitrix/modules/main/lib/db/mysqliconnection.php:149
+#1: Bitrix\Main\DB\MysqliConnection->queryInternal
+	/home/bitrix/www/bitrix/modules/main/lib/db/connection.php:324
+#2: Bitrix\Main\DB\Connection->query
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3601
+#3: Bitrix\Main\ORM\Query\Query->query
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:972
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:499
+#5: Bitrix\Main\ORM\Data\DataManager::getList
+	/home/bitrix/www/otus/homework4/index.php:94
+----------
+
+OTUS 2025-10-11 22:45:28 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined method Bitrix\Main\ORM\Fields\Relations\ManyToMany::getMediatorTableName() (0)
+/home/bitrix/www/otus/homework4/index.php:154
+----------
+
+OTUS 2025-10-11 22:45:58 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined method Bitrix\Main\ORM\Fields\Relations\ManyToMany::getMediatorTableName() (0)
+/home/bitrix/www/otus/homework4/index.php:154
+----------
+
+OTUS 2025-10-11 22:47:40 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined method Bitrix\Main\ORM\Fields\Relations\ManyToMany::getLocalPrimaryKey() (0)
+/home/bitrix/www/otus/homework4/index.php:155
+----------
+
+OTUS 2025-10-11 23:04:02 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `COL_NAME` (COLORS.COL_NAME) for \Otus\Orm\Color Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#5: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:36
+----------
+
+OTUS 2025-10-11 23:19:14 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `PROPERTY_75` (COLORS.PROPERTY_75) for \Otus\Orm\Color Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1017
+#5: Bitrix\Main\ORM\Query\Query->fetchAll
+	/home/bitrix/www/otus/homework4/index.php:39
+----------
+
+OTUS 2025-10-12 23:52:48 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `COLORS_IBLOCK_ELEMENT_ID` (COLORS_IBLOCK_ELEMENT_ID) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/otus/homework4/index.php:59
+----------
+
+OTUS 2025-10-12 23:53:32 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `COLORS_IBLOCK_ELEMENT_ID` (COLORS_IBLOCK_ELEMENT_ID) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/otus/homework4/index.php:59
+----------
+
+OTUS 2025-10-12 23:53:51 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `COLORS_IBLOCK_ELEMENT_ID` (COLORS_IBLOCK_ELEMENT_ID) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/otus/homework4/index.php:59
+----------
+
+OTUS 2025-10-12 23:53:55 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `COLORS_IBLOCK_ELEMENT_ID` (COLORS_IBLOCK_ELEMENT_ID) for \Otus\Orm\Apartmentcomplex Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/otus/homework4/index.php:59
+----------
+
+OTUS 2025-10-12 23:54:54 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+in_array(): Argument #2 ($haystack) must be of type array, null given (0)
+/home/bitrix/www/otus/homework4/index.php:84
+#0: in_array
+	/home/bitrix/www/otus/homework4/index.php:84
+----------
+
