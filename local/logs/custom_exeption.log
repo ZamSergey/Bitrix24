@@ -1740,3 +1740,463 @@ in_array(): Argument #2 ($haystack) must be of type array, null given (0)
 	/home/bitrix/www/otus/homework4/index.php:84
 ----------
 
+OTUS 2025-10-19 23:06:44 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:07:10 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:07:27 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:07:28 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:07:28 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:07:31 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:09:23 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:09:49 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:09:49 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:09:50 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:09:51 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:09:54 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:09:54 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:09:58 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:10:55 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:10:59 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:11:11 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/main/public/component_props2.php:120
+#3: require(string)
+	/home/bitrix/www/bitrix/admin/component_props.php:1
+----------
+
+OTUS 2025-10-19 23:11:20 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:16:31 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:11
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:20:20 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:11
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:24:05 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCurrency" not found (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:11
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_util.php:479
+#1: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#2: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#3: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#4: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-19 23:27:01 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [ParseError] 
+syntax error, unexpected token "use" (0)
+/home/bitrix/www/local/components/otus/currencies/.parameters.php:6
+#0: CComponentUtil::GetComponentProps
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:145
+#1: CComponentParamsManager::GetComponentProperties
+	/home/bitrix/www/bitrix/modules/fileman/classes/general/component_params_manager.php:67
+#2: CComponentParamsManager::ProcessRequest
+	/home/bitrix/www/bitrix/modules/fileman/admin/fileman_component_params.php:13
+#3: require(string)
+	/home/bitrix/www/bitrix/admin/fileman_component_params.php:1
+----------
+
+OTUS 2025-10-20 17:53:02 - Host:  - UNCAUGHT_EXCEPTION - [Bitrix\Main\DB\ConnectionException] 
+Mysql connect error [localhost]: (2002) No such file or directory (400)
+/home/bitrix/www/bitrix/modules/main/lib/db/mysqliconnection.php:86
+#0: Bitrix\Main\DB\MysqliConnection->connectInternal
+	/home/bitrix/www/bitrix/modules/main/lib/data/connection.php:53
+#1: Bitrix\Main\Data\Connection->getResource
+	/home/bitrix/www/bitrix/modules/main/lib/db/mysqlisqlhelper.php:409
+#2: Bitrix\Main\DB\MysqliSqlHelper->forSql
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:210
+#3: Bitrix\Main\Config\Option::load
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:83
+#4: Bitrix\Main\Config\Option::getRealValue
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:32
+#5: Bitrix\Main\Config\Option::get
+	/home/bitrix/www/bitrix/modules/main/lib/httprequest.php:422
+#6: Bitrix\Main\HttpRequest->prepareCookie
+	/home/bitrix/www/bitrix/modules/main/lib/httprequest.php:70
+#7: Bitrix\Main\HttpRequest->__construct
+	/home/bitrix/www/bitrix/modules/main/lib/httpapplication.php:39
+#8: Bitrix\Main\HttpApplication->initializeContext
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:130
+#9: Bitrix\Main\Application->initializeExtendedKernel
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#10: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#11: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS 2025-10-26 18:15:21 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+Cannot access offset of type string on string (0)
+/home/bitrix/www/local/components/otus/currencies/templates/.default/template.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:790
+#1: CBitrixComponentTemplate->__IncludePHPTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:885
+#2: CBitrixComponentTemplate->IncludeTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:784
+#3: CBitrixComponent->showComponentTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:724
+#4: CBitrixComponent->includeComponentTemplate
+	/home/bitrix/www/local/components/otus/currencies/class.php:9
+#5: CurrencyComponent->executeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:668
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/otus/homework5/index.php:5
+----------
+
+OTUS 2025-10-26 18:16:05 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+Cannot access offset of type string on string (0)
+/home/bitrix/www/local/components/otus/currencies/templates/.default/template.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:790
+#1: CBitrixComponentTemplate->__IncludePHPTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:885
+#2: CBitrixComponentTemplate->IncludeTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:784
+#3: CBitrixComponent->showComponentTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:724
+#4: CBitrixComponent->includeComponentTemplate
+	/home/bitrix/www/local/components/otus/currencies/class.php:9
+#5: CurrencyComponent->executeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:668
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/otus/homework5/index.php:4
+----------
+
+OTUS 2025-10-26 18:16:40 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+Cannot access offset of type string on string (0)
+/home/bitrix/www/local/components/otus/currencies/templates/.default/template.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:790
+#1: CBitrixComponentTemplate->__IncludePHPTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:885
+#2: CBitrixComponentTemplate->IncludeTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:784
+#3: CBitrixComponent->showComponentTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:724
+#4: CBitrixComponent->includeComponentTemplate
+	/home/bitrix/www/local/components/otus/currencies/class.php:9
+#5: CurrencyComponent->executeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:668
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/otus/homework5/index.php:4
+----------
+
+OTUS 2025-10-26 18:16:45 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+Cannot access offset of type string on string (0)
+/home/bitrix/www/local/components/otus/currencies/templates/.default/template.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:790
+#1: CBitrixComponentTemplate->__IncludePHPTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:885
+#2: CBitrixComponentTemplate->IncludeTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:784
+#3: CBitrixComponent->showComponentTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:724
+#4: CBitrixComponent->includeComponentTemplate
+	/home/bitrix/www/local/components/otus/currencies/class.php:9
+#5: CurrencyComponent->executeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:668
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/otus/homework5/index.php:4
+----------
+
+OTUS 2025-10-26 18:17:16 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+Cannot access offset of type string on string (0)
+/home/bitrix/www/local/components/otus/currencies/templates/.default/template.php:12
+#0: include
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:790
+#1: CBitrixComponentTemplate->__IncludePHPTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:885
+#2: CBitrixComponentTemplate->IncludeTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:784
+#3: CBitrixComponent->showComponentTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:724
+#4: CBitrixComponent->includeComponentTemplate
+	/home/bitrix/www/local/components/otus/currencies/class.php:9
+#5: CurrencyComponent->executeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:668
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/otus/homework5/index.php:4
+----------
+

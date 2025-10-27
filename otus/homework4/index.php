@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
-$APPLICATION->setTitle('Списки');
+$APPLICATION->setTitle('Создание своих таблиц БД и написание модели данных к ним');
 $APPLICATION->SetAdditionalCSS('/otus/homework3/style.css');
 use Bitrix\Main\Loader,
     Bitrix\Main\Type\Date;
@@ -41,6 +41,8 @@ while ($apartment = $apartResult->fetch()) {
         $apartments[$apartmentId] = [
             'ID' => $apartmentId,
             'TITLE' => $apartment['TITLE'],
+            'DEVELOPER_ID' => $apartment['DEVELOPER_ID'],
+            'DEVELOPER_NAME' => $apartment['DEVELOPER_NAME'],
             'BUILD_DATE' => $apartment['BUILD_DATE']->format('d.m.Y'),
             'DESCRIPTION' => $apartment['DESCRIPTION'],
             'COLORS' => [],
