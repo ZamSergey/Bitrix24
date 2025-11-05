@@ -2200,3 +2200,76 @@ Cannot access offset of type string on string (0)
 	/home/bitrix/www/otus/homework5/index.php:4
 ----------
 
+OTUS 2025-10-29 18:02:59 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Lader" not found (0)
+/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php(135) : eval()'d code:4
+#0: eval
+	/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php:135
+#1: require_once(string)
+	/home/bitrix/www/bitrix/admin/php_command_line.php:2
+----------
+
+OTUS 2025-10-29 18:03:12 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Crmcustomtab\Helper" not found (0)
+/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php(135) : eval()'d code:6
+#0: eval
+	/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php:135
+#1: require_once(string)
+	/home/bitrix/www/bitrix/admin/php_command_line.php:2
+----------
+
+OTUS 2025-10-29 18:07:11 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Crmcustomtab\Helper" not found (0)
+/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php(135) : eval()'d code:6
+#0: eval
+	/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php:135
+#1: require_once(string)
+	/home/bitrix/www/bitrix/admin/php_command_line.php:2
+----------
+
+OTUS 2025-10-29 18:08:06 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Crmcustomtab\Helper" not found (0)
+/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php(135) : eval()'d code:6
+#0: eval
+	/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php:135
+#1: require_once(string)
+	/home/bitrix/www/bitrix/admin/php_command_line.php:2
+----------
+
+OTUS 2025-10-29 18:18:49 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Crmcustomtab\Helper" not found (0)
+/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php(135) : eval()'d code:6
+#0: eval
+	/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php:135
+#1: require_once(string)
+	/home/bitrix/www/bitrix/admin/php_command_line.php:2
+----------
+
+OTUS 2025-11-04 14:09:08 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Crmcustomtab\Data\TestDataInstaller" not found (0)
+/home/bitrix/www/local/modules/otus.crmcustomtab/install/index.php:180
+#0: otus_crmcustomtab->addEntityElements
+	/home/bitrix/www/local/modules/otus.crmcustomtab/install/index.php:105
+#1: otus_crmcustomtab->InstallDB
+	/home/bitrix/www/local/modules/otus.crmcustomtab/install/index.php:53
+#2: otus_crmcustomtab->DoInstall
+	/home/bitrix/www/bitrix/modules/main/admin/partner_modules.php:249
+#3: require_once(string)
+	/home/bitrix/www/bitrix/admin/partner_modules.php:2
+----------
+
+OTUS 2025-11-04 14:12:23 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Crmcustomtab\Data\BookTable" not found (0)
+/home/bitrix/www/local/modules/otus.crmcustomtab/lib/Data/TestDataInstaller.php:47
+#0: Otus\Crmcustomtab\Data\TestDataInstaller::addTestData
+	/home/bitrix/www/local/modules/otus.crmcustomtab/install/index.php:180
+#1: otus_crmcustomtab->addEntityElements
+	/home/bitrix/www/local/modules/otus.crmcustomtab/install/index.php:105
+#2: otus_crmcustomtab->InstallDB
+	/home/bitrix/www/local/modules/otus.crmcustomtab/install/index.php:53
+#3: otus_crmcustomtab->DoInstall
+	/home/bitrix/www/bitrix/modules/main/admin/partner_modules.php:249
+#4: require_once(string)
+	/home/bitrix/www/bitrix/admin/partner_modules.php:2
+----------
+
