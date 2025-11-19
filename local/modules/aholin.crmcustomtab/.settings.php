@@ -2,8 +2,8 @@
 
 use Bitrix\Main\DI\ServiceLocator;
 use Bitrix\Main\UserTable;
-use Otus\Entities\Main\UserController;
-use Otus\Entities\Main\UserRepository;
+use Aholin\Entities\Main\UserController;
+use Aholin\Entities\Main\UserRepository;
 
 if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
     die();

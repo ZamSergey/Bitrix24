@@ -27,3 +27,26 @@ function pr($var, $type = false) {
         print_r($var);
     echo '</pre>';
 }
+
+use Bitrix\Main\EventManager;
+
+$eventManager = EventManager::getInstance();
+
+// пользовательский тип для свойства инфоблока
+$eventManager->AddEventHandler(
+    'iblock',
+    'OnIBlockPropertyBuildList',
+    [
+        'Otus\userTypes\IBLink', // класс обработчик пользовательского типа свойства 
+        'GetUserTypeDescription'
+    ]
+);
+// пользовательский тип для свойства инфоблока
+$eventManager->AddEventHandler(
+    'iblock',
+    'OnIBlockPropertyBuildList',
+    [
+        'Otus\userTypes\CUserTypeOnlineRecord', // класс обработчик пользовательского типа свойства 
+        'GetUserTypeDescription'
+    ]
+);
