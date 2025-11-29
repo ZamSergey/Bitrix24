@@ -9,6 +9,18 @@ use Otus\Custom\DoctorPropertyValuesTable as DoctorCalss;
 use Otus\Custom\PocedurePropertyValuesTable as PocedureCalss;
 Loader::includeModule('iblock');
 
+$placementList = [
+    'above_pagetitle',
+    'pagetitle',
+    'inside_pagetitle',
+    'below_pagetitle',
+    'sidebar',
+    'topblock',
+];
+foreach ($placementList as $placement) {
+    $APPLICATION->AddViewContent($placement, "<span style='color:white'>$placement</span>");
+}
+
 // $iblockId = 16;
 // $iblockElementId = 32;
 // $doctors = \Bitrix\Iblock\Elements\ElementDoctorsTable::query() 
