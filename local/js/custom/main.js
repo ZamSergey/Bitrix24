@@ -1,8 +1,24 @@
-console.log("main.js CONNECTED");
+BX.addCustomEvent("onTimeManDataRecieved", function (data) {
 
-BX.addCustomEvent("customStartWork", function ($event) {
-    console.log();
+    BX.defer(() => {
+        let button = document.querySelector('#bx-avatar-header-popup button.ui-btn.--air.tm-control-panel__action.ui-btn-lg.--wide');
+        let customButton = document.querySelector('custom_button');
+        let isPause = button ? button.querySelector('.ui-btn-text-inner').textContent === "Пауза" : false;
+        
+        if (button && !customButton) {            
+            let copyButton = button.cloneNode(true);           
+            if (!isPause) {
+                button.setAttribute('style', 'position: absolute; top: -10000px; left: -10000px');
+                copyButton.classList.add('custom_button');
+                copyButton.addEventListener('click', (e) => customClickHandler(e, button))
+                button.parentNode.append(copyButton);
+            }
+        }
+
+    })();
+
 });
+
 const customClickHandler = (e, button) => {
     console.log('Custom click');
     // showForm();
@@ -11,56 +27,8 @@ const customClickHandler = (e, button) => {
 }
 
 
-
-let originalBxOnCustomEvent = BX.onCustomEvent;
-BX.onCustomEvent = function (eventObject, eventName, eventParams, secureParams) {
-
-    let button = document.querySelector('#bx-avatar-header-popup button');
-    let customButton = document.querySelector('custom_button');
-
-
-    if (button && !customButton) {
-        const copyButton = button.cloneNode(true);
-        button.setAttribute('style', 'position: absolute; top: -10000px; left: -10000px');
-        copyButton.classList.add('custom_button');
-        copyButton.addEventListener('click', (e) => customClickHandler(e,button ))
-        button.parentNode.append(copyButton);
-
-    }
-
-
-
-
-    // onMenuItemHover например выбрасывает в другом порядке
-    // let realEventName = BX.type.isString(eventName) ?
-    //     eventName : BX.type.isString(eventObject) ? eventObject : null;
-    // if (realEventName) {
-    // let array = BX.findChildren(BX('timeman_main'), {
-    //     // тег
-    //     tag: "button",
-    //     // класс
-    //     className: "ui-btn ui-btn-success ui-btn-icon-start",
-    // }, true);
-
-    // console.log(array)
-    //     console.log(
-    //         '%c' + realEventName,
-    //         'background: #222; color: #bada55; font-weight: bold; padding: 3px 4px;'
-    //     );
-    // }
-    // console.dir({
-    //     eventObject: eventObject,
-    //     eventParams: eventParams,
-    //     secureParams: secureParams
-    // });
-    // originalBxOnCustomEvent.apply(
-    //     null, arguments
-    // );
-};
-
-
 const popUpWindow = (button) => {
-    
+
 
     BX.PopupWindowManager.create("bookingPopup_", null, {
         content: "<div>Вы точно уверены, что хотите нажать эту кнопку?</div>",
