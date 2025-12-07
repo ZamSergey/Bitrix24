@@ -3948,3 +3948,366 @@ Request failed with http code 400: {"timestamp":"2025-11-27T17:44:02.120+00:00",
 	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
 ----------
 
+OTUS 2025-12-02 22:26:02 - Host:  - UNCAUGHT_EXCEPTION - [Bitrix\Main\DB\ConnectionException] 
+Mysql connect error [localhost]: (2002) No such file or directory (400)
+/home/bitrix/www/bitrix/modules/main/lib/db/mysqliconnection.php:86
+#0: Bitrix\Main\DB\MysqliConnection->connectInternal
+	/home/bitrix/www/bitrix/modules/main/lib/data/connection.php:53
+#1: Bitrix\Main\Data\Connection->getResource
+	/home/bitrix/www/bitrix/modules/main/lib/db/mysqlisqlhelper.php:409
+#2: Bitrix\Main\DB\MysqliSqlHelper->forSql
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:210
+#3: Bitrix\Main\Config\Option::load
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:83
+#4: Bitrix\Main\Config\Option::getRealValue
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:32
+#5: Bitrix\Main\Config\Option::get
+	/home/bitrix/www/bitrix/modules/main/lib/httprequest.php:422
+#6: Bitrix\Main\HttpRequest->prepareCookie
+	/home/bitrix/www/bitrix/modules/main/lib/httprequest.php:70
+#7: Bitrix\Main\HttpRequest->__construct
+	/home/bitrix/www/bitrix/modules/main/lib/httpapplication.php:39
+#8: Bitrix\Main\HttpApplication->initializeContext
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:130
+#9: Bitrix\Main\Application->initializeExtendedKernel
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#10: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#11: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS 2025-12-07 14:37:36 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function pritn_r() (0)
+/home/bitrix/www/local/activities/custom/myactivity/myactivity.php:74
+#0: CBPMyActivity->internalExecute
+	/home/bitrix/www/bitrix/modules/bizproc/lib/activity/baseactivity.php:35
+#1: Bitrix\Bizproc\Activity\BaseActivity->execute
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:546
+#2: CBPWorkflow->runExecuteActivityOperation
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:514
+#3: CBPWorkflow->runQueuedItem
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:492
+#4: CBPWorkflow->runStep
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:473
+#5: CBPWorkflow->runQueue
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:240
+#6: CBPWorkflow->run
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:208
+#7: CBPWorkflow->start
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/document.php:347
+#8: CBPDocument::startWorkflow
+	/home/bitrix/www/bitrix/modules/bizproc/lib/Api/Service/WorkflowService.php:62
+#9: Bitrix\Bizproc\Api\Service\WorkflowService->startWorkflow
+	/home/bitrix/www/bitrix/components/bitrix/lists.element.edit/component.php:862
+#10: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#11: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#12: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#13: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/lists/templates/.default/list_element_edit.php:2
+#14: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:842
+#15: CBitrixComponentTemplate->__IncludePHPTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:951
+#16: CBitrixComponentTemplate->IncludeTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:791
+#17: CBitrixComponent->showComponentTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:731
+#18: CBitrixComponent->includeComponentTemplate
+	/home/bitrix/www/bitrix/components/bitrix/lists/component.php:355
+#19: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#20: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#21: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#22: CAllMain->IncludeComponent
+	/home/bitrix/www/services/lists/index.php:9
+#23: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#24: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2025-12-07 20:50:03 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined function getDataInfo() (0)
+/home/bitrix/www/local/activities/custom/myactivity/myactivity.php:67
+#0: CBPMyActivity->internalExecute
+	/home/bitrix/www/bitrix/modules/bizproc/lib/activity/baseactivity.php:35
+#1: Bitrix\Bizproc\Activity\BaseActivity->execute
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:546
+#2: CBPWorkflow->runExecuteActivityOperation
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:514
+#3: CBPWorkflow->runQueuedItem
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:492
+#4: CBPWorkflow->runStep
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:473
+#5: CBPWorkflow->runQueue
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:240
+#6: CBPWorkflow->run
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:208
+#7: CBPWorkflow->start
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/document.php:347
+#8: CBPDocument::startWorkflow
+	/home/bitrix/www/bitrix/modules/bizproc/lib/Api/Service/WorkflowService.php:62
+#9: Bitrix\Bizproc\Api\Service\WorkflowService->startWorkflow
+	/home/bitrix/www/bitrix/components/bitrix/lists.element.edit/component.php:862
+#10: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#11: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#12: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#13: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/lists/templates/.default/list_element_edit.php:2
+#14: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:842
+#15: CBitrixComponentTemplate->__IncludePHPTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:951
+#16: CBitrixComponentTemplate->IncludeTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:791
+#17: CBitrixComponent->showComponentTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:731
+#18: CBitrixComponent->includeComponentTemplate
+	/home/bitrix/www/bitrix/components/bitrix/lists/component.php:355
+#19: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#20: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#21: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#22: CAllMain->IncludeComponent
+	/home/bitrix/www/services/lists/index.php:9
+#23: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#24: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2025-12-07 20:51:06 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to a member function getDocumentType() on null (0)
+/home/bitrix/www/local/activities/custom/myactivity/myactivity.php:113
+#0: CBPMyActivity->internalExecute
+	/home/bitrix/www/bitrix/modules/bizproc/lib/activity/baseactivity.php:35
+#1: Bitrix\Bizproc\Activity\BaseActivity->execute
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:546
+#2: CBPWorkflow->runExecuteActivityOperation
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:514
+#3: CBPWorkflow->runQueuedItem
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:492
+#4: CBPWorkflow->runStep
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:473
+#5: CBPWorkflow->runQueue
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:240
+#6: CBPWorkflow->run
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:208
+#7: CBPWorkflow->start
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/document.php:347
+#8: CBPDocument::startWorkflow
+	/home/bitrix/www/bitrix/modules/bizproc/lib/Api/Service/WorkflowService.php:62
+#9: Bitrix\Bizproc\Api\Service\WorkflowService->startWorkflow
+	/home/bitrix/www/bitrix/components/bitrix/lists.element.edit/component.php:862
+#10: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#11: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#12: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#13: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/lists/templates/.default/list_element_edit.php:2
+#14: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:842
+#15: CBitrixComponentTemplate->__IncludePHPTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:951
+#16: CBitrixComponentTemplate->IncludeTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:791
+#17: CBitrixComponent->showComponentTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:731
+#18: CBitrixComponent->includeComponentTemplate
+	/home/bitrix/www/bitrix/components/bitrix/lists/component.php:355
+#19: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#20: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#21: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#22: CAllMain->IncludeComponent
+	/home/bitrix/www/services/lists/index.php:9
+#23: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#24: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2025-12-07 20:54:16 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Using $this when not in object context (0)
+/home/bitrix/www/local/activities/custom/myactivity/myactivity.php:45
+#0: CBPMyActivity::getDataInfo
+	/home/bitrix/www/local/activities/custom/myactivity/myactivity.php:67
+#1: CBPMyActivity->internalExecute
+	/home/bitrix/www/bitrix/modules/bizproc/lib/activity/baseactivity.php:35
+#2: Bitrix\Bizproc\Activity\BaseActivity->execute
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:546
+#3: CBPWorkflow->runExecuteActivityOperation
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:514
+#4: CBPWorkflow->runQueuedItem
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:492
+#5: CBPWorkflow->runStep
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:473
+#6: CBPWorkflow->runQueue
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:240
+#7: CBPWorkflow->run
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:208
+#8: CBPWorkflow->start
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/document.php:347
+#9: CBPDocument::startWorkflow
+	/home/bitrix/www/bitrix/modules/bizproc/lib/Api/Service/WorkflowService.php:62
+#10: Bitrix\Bizproc\Api\Service\WorkflowService->startWorkflow
+	/home/bitrix/www/bitrix/components/bitrix/lists.element.edit/component.php:862
+#11: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#12: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#13: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#14: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/lists/templates/.default/list_element_edit.php:2
+#15: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:842
+#16: CBitrixComponentTemplate->__IncludePHPTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:951
+#17: CBitrixComponentTemplate->IncludeTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:791
+#18: CBitrixComponent->showComponentTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:731
+#19: CBitrixComponent->includeComponentTemplate
+	/home/bitrix/www/bitrix/components/bitrix/lists/component.php:355
+#20: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#21: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#22: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#23: CAllMain->IncludeComponent
+	/home/bitrix/www/services/lists/index.php:9
+#24: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#25: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2025-12-07 20:55:57 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to a member function getDocumentType() on null (0)
+/home/bitrix/www/local/activities/custom/myactivity/myactivity.php:113
+#0: CBPMyActivity->internalExecute
+	/home/bitrix/www/bitrix/modules/bizproc/lib/activity/baseactivity.php:35
+#1: Bitrix\Bizproc\Activity\BaseActivity->execute
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:546
+#2: CBPWorkflow->runExecuteActivityOperation
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:514
+#3: CBPWorkflow->runQueuedItem
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:492
+#4: CBPWorkflow->runStep
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:473
+#5: CBPWorkflow->runQueue
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:240
+#6: CBPWorkflow->run
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:208
+#7: CBPWorkflow->start
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/document.php:347
+#8: CBPDocument::startWorkflow
+	/home/bitrix/www/bitrix/modules/bizproc/lib/Api/Service/WorkflowService.php:62
+#9: Bitrix\Bizproc\Api\Service\WorkflowService->startWorkflow
+	/home/bitrix/www/bitrix/components/bitrix/lists.element.edit/component.php:862
+#10: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#11: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#12: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#13: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/lists/templates/.default/list_element_edit.php:2
+#14: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:842
+#15: CBitrixComponentTemplate->__IncludePHPTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:951
+#16: CBitrixComponentTemplate->IncludeTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:791
+#17: CBitrixComponent->showComponentTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:731
+#18: CBitrixComponent->includeComponentTemplate
+	/home/bitrix/www/bitrix/components/bitrix/lists/component.php:355
+#19: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#20: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#21: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#22: CAllMain->IncludeComponent
+	/home/bitrix/www/services/lists/index.php:9
+#23: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#24: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2025-12-07 21:39:35 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+explode(): Argument #2 ($string) must be of type string, array given (0)
+/home/bitrix/www/local/activities/custom/myactivity/myactivity.php:138
+#0: explode
+	/home/bitrix/www/local/activities/custom/myactivity/myactivity.php:138
+#1: CBPMyActivity->internalExecute
+	/home/bitrix/www/bitrix/modules/bizproc/lib/activity/baseactivity.php:35
+#2: Bitrix\Bizproc\Activity\BaseActivity->execute
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:546
+#3: CBPWorkflow->runExecuteActivityOperation
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:514
+#4: CBPWorkflow->runQueuedItem
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:492
+#5: CBPWorkflow->runStep
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:473
+#6: CBPWorkflow->runQueue
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:240
+#7: CBPWorkflow->run
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/workflow.php:208
+#8: CBPWorkflow->start
+	/home/bitrix/www/bitrix/modules/bizproc/classes/general/document.php:347
+#9: CBPDocument::startWorkflow
+	/home/bitrix/www/bitrix/modules/bizproc/lib/Api/Service/WorkflowService.php:62
+#10: Bitrix\Bizproc\Api\Service\WorkflowService->startWorkflow
+	/home/bitrix/www/bitrix/components/bitrix/lists.element.edit/component.php:862
+#11: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#12: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#13: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#14: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/lists/templates/.default/list_element_edit.php:2
+#15: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:842
+#16: CBitrixComponentTemplate->__IncludePHPTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:951
+#17: CBitrixComponentTemplate->IncludeTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:791
+#18: CBitrixComponent->showComponentTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:731
+#19: CBitrixComponent->includeComponentTemplate
+	/home/bitrix/www/bitrix/components/bitrix/lists/component.php:355
+#20: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#21: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#22: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#23: CAllMain->IncludeComponent
+	/home/bitrix/www/services/lists/index.php:9
+#24: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#25: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
