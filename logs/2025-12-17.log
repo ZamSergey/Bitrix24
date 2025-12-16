@@ -1,0 +1,666 @@
+Получили событие:
+3
+
+ПОЛЯ:
+Array
+(
+    [ACTIVE] => Y
+    [MODIFIED_BY] => 1
+    [ACTIVE_FROM] => 
+    [ACTIVE_TO] => 
+    [SORT] => 500
+    [NAME] => Врачи
+    [CODE] => Test
+    [TAGS] => 
+    [PREVIEW_TEXT] => 
+    [PREVIEW_TEXT_TYPE] => text
+    [DETAIL_TEXT] => 
+    [DETAIL_TEXT_TYPE] => text
+    [TMP_ID] => 0
+    [PROPERTY_VALUES] => Array
+        (
+            [88] => Array
+                (
+                    [n0] => Array
+                        (
+                            [VALUE] => 
+                        )
+
+                )
+
+            [87] => Array
+                (
+                    [323] => Array
+                        (
+                            [VALUE] => 3
+                        )
+
+                )
+
+            [86] => Array
+                (
+                    [322] => Array
+                        (
+                            [VALUE] => 191000|RUB
+                        )
+
+                )
+
+        )
+
+    [IBLOCK_SECTION] => Array
+        (
+        )
+
+    [IPROPERTY_TEMPLATES] => Array
+        (
+            [ELEMENT_META_TITLE] => 
+            [ELEMENT_META_KEYWORDS] => 
+            [ELEMENT_META_DESCRIPTION] => 
+            [ELEMENT_PAGE_TITLE] => 
+            [ELEMENT_PREVIEW_PICTURE_FILE_ALT] => 
+            [ELEMENT_PREVIEW_PICTURE_FILE_TITLE] => 
+            [ELEMENT_PREVIEW_PICTURE_FILE_NAME] => 
+            [ELEMENT_DETAIL_PICTURE_FILE_ALT] => 
+            [ELEMENT_DETAIL_PICTURE_FILE_TITLE] => 
+            [ELEMENT_DETAIL_PICTURE_FILE_NAME] => 
+        )
+
+    [WF] => N
+    [SEARCHABLE_CONTENT] => ВРАЧИ
+СЕРГЕЙ ЗАМАЛЕТДИНОВ
+ПОКУПКА ПО
+191000|RUB
+    [ID] => 114
+    [IBLOCK_ID] => 23
+    [RESULT] => 1
+)
+
+
+Сделку нашли:
+3
+
+Завшли в условие записи:
+
+
+ЧТО ПИШЕМ:
+Array
+(
+    [OPPORTUNITY] => 191000
+    [CURRENCY_ID] => RUB
+)
+
+
+Данные сделки:
+Array
+(
+    [ID] => 3
+    [TITLE] => Покупка ПО
+    [TYPE_ID] => SERVICE
+    [STAGE_ID] => LOSE
+    [ORDER_STAGE] => 
+    [PROBABILITY] => 80
+    [CURRENCY_ID] => RUB
+    [EXCH_RATE] => 1.0000
+    [OPPORTUNITY] => 191000.00
+    [IS_MANUAL_OPPORTUNITY] => Y
+    [TAX_VALUE] => 
+    [ACCOUNT_CURRENCY_ID] => RUB
+    [OPPORTUNITY_ACCOUNT] => 191000.00
+    [TAX_VALUE_ACCOUNT] => 0.00
+    [LEAD_ID] => 
+    [COMPANY_ID] => 5
+    [COMPANY_ADDRESS] => 
+    [COMPANY_ADDRESS_LEGAL] => 
+    [CONTACT_ID] => 2
+    [CONTACT_ADDRESS] => 
+    [QUOTE_ID] => 
+    [QUOTE_TITLE] => 
+    [BEGINDATE] => 23.03.2011
+    [CLOSEDATE] => 11.09.2025
+    [ASSIGNED_BY_ID] => 1
+    [ASSIGNED_BY_LOGIN] => admin
+    [ASSIGNED_BY_NAME] => Сергей
+    [ASSIGNED_BY_LAST_NAME] => Замалетдинов
+    [ASSIGNED_BY_SECOND_NAME] => 
+    [ASSIGNED_BY_WORK_POSITION] => 
+    [ASSIGNED_BY_PERSONAL_PHOTO] => 
+    [CREATED_BY_ID] => 1
+    [CREATED_BY_LOGIN] => admin
+    [CREATED_BY_NAME] => Сергей
+    [CREATED_BY_LAST_NAME] => Замалетдинов
+    [CREATED_BY_SECOND_NAME] => 
+    [MODIFY_BY_ID] => 1
+    [MODIFY_BY_LOGIN] => admin
+    [MODIFY_BY_NAME] => Сергей
+    [MODIFY_BY_LAST_NAME] => Замалетдинов
+    [MODIFY_BY_SECOND_NAME] => 
+    [DATE_CREATE] => 11.09.2025 21:04:52
+    [DATE_MODIFY] => 17.12.2025 00:02:09
+    [OPENED] => N
+    [CLOSED] => Y
+    [COMMENTS] => 
+    [ADDITIONAL_INFO] => 
+    [LOCATION_ID] => 
+    [CATEGORY_ID] => 0
+    [STAGE_SEMANTIC_ID] => F
+    [IS_NEW] => N
+    [IS_RECURRING] => N
+    [IS_RETURN_CUSTOMER] => Y
+    [IS_REPEATED_APPROACH] => N
+    [SOURCE_ID] => 
+    [SOURCE_DESCRIPTION] => 
+    [WEBFORM_ID] => 
+    [ORIGINATOR_ID] => 
+    [ORIGIN_ID] => 
+    [MOVED_BY_ID] => 1
+    [MOVED_TIME] => 11.09.2025 21:04:52
+    [PRODUCT_ID] => 
+    [EVENT_ID] => 
+    [EVENT_DATE] => 
+    [EVENT_DESCRIPTION] => 
+    [LAST_ACTIVITY_TIME] => 11.09.2025 21:04:52
+    [ASSIGNED_BY] => 1
+    [CREATED_BY] => 1
+    [MODIFY_BY] => 1
+    [MOVED_BY] => 1
+    [CONTACT_POST] => Руководитель проектов
+    [CONTACT_COMMENTS] => 
+    [CONTACT_HONORIFIC] => 
+    [CONTACT_NAME] => Борис
+    [CONTACT_SECOND_NAME] => Викторович
+    [CONTACT_LAST_NAME] => Соколов
+    [CONTACT_FULL_NAME] => Борис Соколов
+    [CONTACT_PHOTO] => 67
+    [CONTACT_LEAD_ID] => 
+    [CONTACT_TYPE_ID] => SUPPLIER
+    [CONTACT_SOURCE_ID] => TRADE_SHOW
+    [CONTACT_SOURCE_DESCRIPTION] => 
+    [CONTACT_COMPANY_ID] => 5
+    [CONTACT_BIRTHDATE] => 
+    [CONTACT_BIRTHDAY_SORT] => 1024
+    [CONTACT_EXPORT] => Y
+    [CONTACT_HAS_PHONE] => Y
+    [CONTACT_HAS_EMAIL] => Y
+    [CONTACT_HAS_IMOL] => N
+    [CONTACT_DATE_CREATE] => 11.09.2025 21:04:51
+    [CONTACT_DATE_MODIFY] => 11.09.2025 21:04:51
+    [CONTACT_ASSIGNED_BY_ID] => 1
+    [CONTACT_CREATED_BY_ID] => 1
+    [CONTACT_MODIFY_BY_ID] => 1
+    [CONTACT_OPENED] => Y
+    [CONTACT_WEBFORM_ID] => 
+    [CONTACT_ORIGINATOR_ID] => 
+    [CONTACT_ORIGIN_ID] => 
+    [CONTACT_ORIGIN_VERSION] => 
+    [CONTACT_FACE_ID] => 
+    [CONTACT_CATEGORY_ID] => 0
+    [CONTACT_LAST_ACTIVITY_BY] => 1
+    [CONTACT_LAST_ACTIVITY_TIME] => 11.09.2025 21:04:51
+    [COMPANY_TYPE] => CUSTOMER
+    [COMPANY_TITLE] => ООО "Новые технологии"
+    [COMPANY_LOGO] => 77
+    [COMPANY_LEAD_ID] => 
+    [COMPANY_HAS_PHONE] => Y
+    [COMPANY_HAS_EMAIL] => Y
+    [COMPANY_HAS_IMOL] => N
+    [COMPANY_ASSIGNED_BY_ID] => 1
+    [COMPANY_CREATED_BY_ID] => 1
+    [COMPANY_MODIFY_BY_ID] => 1
+    [COMPANY_BANKING_DETAILS] => 
+    [COMPANY_INDUSTRY] => IT
+    [COMPANY_REVENUE] => 120000
+    [COMPANY_CURRENCY_ID] => RUB
+    [COMPANY_EMPLOYEES] => EMPLOYEES_1
+    [COMPANY_COMMENTS] => 
+    [COMPANY_DATE_CREATE] => 11.09.2025 21:04:52
+    [COMPANY_DATE_MODIFY] => 11.09.2025 21:04:52
+    [COMPANY_OPENED] => Y
+    [COMPANY_IS_MY_COMPANY] => N
+    [COMPANY_WEBFORM_ID] => 
+    [COMPANY_ORIGINATOR_ID] => 
+    [COMPANY_ORIGIN_ID] => 
+    [COMPANY_ORIGIN_VERSION] => 
+    [COMPANY_CATEGORY_ID] => 0
+    [COMPANY_LAST_ACTIVITY_BY] => 1
+    [COMPANY_LAST_ACTIVITY_TIME] => 11.09.2025 21:04:52
+    [UTM_SOURCE] => 
+    [UTM_MEDIUM] => 
+    [UTM_CAMPAIGN] => 
+    [UTM_CONTENT] => 
+    [UTM_TERM] => 
+    [LAST_COMMUNICATION_TIME] => 
+    [LAST_ACTIVITY_BY] => 1
+)
+
+
+iBlock:
+191000|RUB
+
+из Сделки:
+9000|RUB
+
+Данные сделки:
+Array
+(
+    [ID] => 3
+    [TITLE] => Покупка ПО
+    [TYPE_ID] => SERVICE
+    [STAGE_ID] => LOSE
+    [ORDER_STAGE] => 
+    [PROBABILITY] => 80
+    [CURRENCY_ID] => RUB
+    [EXCH_RATE] => 1.0000
+    [OPPORTUNITY] => 91000.00
+    [IS_MANUAL_OPPORTUNITY] => Y
+    [TAX_VALUE] => 
+    [ACCOUNT_CURRENCY_ID] => RUB
+    [OPPORTUNITY_ACCOUNT] => 91000.00
+    [TAX_VALUE_ACCOUNT] => 0.00
+    [LEAD_ID] => 
+    [COMPANY_ID] => 5
+    [COMPANY_ADDRESS] => 
+    [COMPANY_ADDRESS_LEGAL] => 
+    [CONTACT_ID] => 2
+    [CONTACT_ADDRESS] => 
+    [QUOTE_ID] => 
+    [QUOTE_TITLE] => 
+    [BEGINDATE] => 23.03.2011
+    [CLOSEDATE] => 11.09.2025
+    [ASSIGNED_BY_ID] => 1
+    [ASSIGNED_BY_LOGIN] => admin
+    [ASSIGNED_BY_NAME] => Сергей
+    [ASSIGNED_BY_LAST_NAME] => Замалетдинов
+    [ASSIGNED_BY_SECOND_NAME] => 
+    [ASSIGNED_BY_WORK_POSITION] => 
+    [ASSIGNED_BY_PERSONAL_PHOTO] => 
+    [CREATED_BY_ID] => 1
+    [CREATED_BY_LOGIN] => admin
+    [CREATED_BY_NAME] => Сергей
+    [CREATED_BY_LAST_NAME] => Замалетдинов
+    [CREATED_BY_SECOND_NAME] => 
+    [MODIFY_BY_ID] => 1
+    [MODIFY_BY_LOGIN] => admin
+    [MODIFY_BY_NAME] => Сергей
+    [MODIFY_BY_LAST_NAME] => Замалетдинов
+    [MODIFY_BY_SECOND_NAME] => 
+    [DATE_CREATE] => 11.09.2025 21:04:52
+    [DATE_MODIFY] => 17.12.2025 00:02:34
+    [OPENED] => N
+    [CLOSED] => Y
+    [COMMENTS] => 
+    [ADDITIONAL_INFO] => 
+    [LOCATION_ID] => 
+    [CATEGORY_ID] => 0
+    [STAGE_SEMANTIC_ID] => F
+    [IS_NEW] => N
+    [IS_RECURRING] => N
+    [IS_RETURN_CUSTOMER] => Y
+    [IS_REPEATED_APPROACH] => N
+    [SOURCE_ID] => 
+    [SOURCE_DESCRIPTION] => 
+    [WEBFORM_ID] => 
+    [ORIGINATOR_ID] => 
+    [ORIGIN_ID] => 
+    [MOVED_BY_ID] => 1
+    [MOVED_TIME] => 11.09.2025 21:04:52
+    [PRODUCT_ID] => 
+    [EVENT_ID] => 
+    [EVENT_DATE] => 
+    [EVENT_DESCRIPTION] => 
+    [LAST_ACTIVITY_TIME] => 11.09.2025 21:04:52
+    [ASSIGNED_BY] => 1
+    [CREATED_BY] => 1
+    [MODIFY_BY] => 1
+    [MOVED_BY] => 1
+    [CONTACT_POST] => Руководитель проектов
+    [CONTACT_COMMENTS] => 
+    [CONTACT_HONORIFIC] => 
+    [CONTACT_NAME] => Борис
+    [CONTACT_SECOND_NAME] => Викторович
+    [CONTACT_LAST_NAME] => Соколов
+    [CONTACT_FULL_NAME] => Борис Соколов
+    [CONTACT_PHOTO] => 67
+    [CONTACT_LEAD_ID] => 
+    [CONTACT_TYPE_ID] => SUPPLIER
+    [CONTACT_SOURCE_ID] => TRADE_SHOW
+    [CONTACT_SOURCE_DESCRIPTION] => 
+    [CONTACT_COMPANY_ID] => 5
+    [CONTACT_BIRTHDATE] => 
+    [CONTACT_BIRTHDAY_SORT] => 1024
+    [CONTACT_EXPORT] => Y
+    [CONTACT_HAS_PHONE] => Y
+    [CONTACT_HAS_EMAIL] => Y
+    [CONTACT_HAS_IMOL] => N
+    [CONTACT_DATE_CREATE] => 11.09.2025 21:04:51
+    [CONTACT_DATE_MODIFY] => 11.09.2025 21:04:51
+    [CONTACT_ASSIGNED_BY_ID] => 1
+    [CONTACT_CREATED_BY_ID] => 1
+    [CONTACT_MODIFY_BY_ID] => 1
+    [CONTACT_OPENED] => Y
+    [CONTACT_WEBFORM_ID] => 
+    [CONTACT_ORIGINATOR_ID] => 
+    [CONTACT_ORIGIN_ID] => 
+    [CONTACT_ORIGIN_VERSION] => 
+    [CONTACT_FACE_ID] => 
+    [CONTACT_CATEGORY_ID] => 0
+    [CONTACT_LAST_ACTIVITY_BY] => 1
+    [CONTACT_LAST_ACTIVITY_TIME] => 11.09.2025 21:04:51
+    [COMPANY_TYPE] => CUSTOMER
+    [COMPANY_TITLE] => ООО "Новые технологии"
+    [COMPANY_LOGO] => 77
+    [COMPANY_LEAD_ID] => 
+    [COMPANY_HAS_PHONE] => Y
+    [COMPANY_HAS_EMAIL] => Y
+    [COMPANY_HAS_IMOL] => N
+    [COMPANY_ASSIGNED_BY_ID] => 1
+    [COMPANY_CREATED_BY_ID] => 1
+    [COMPANY_MODIFY_BY_ID] => 1
+    [COMPANY_BANKING_DETAILS] => 
+    [COMPANY_INDUSTRY] => IT
+    [COMPANY_REVENUE] => 120000
+    [COMPANY_CURRENCY_ID] => RUB
+    [COMPANY_EMPLOYEES] => EMPLOYEES_1
+    [COMPANY_COMMENTS] => 
+    [COMPANY_DATE_CREATE] => 11.09.2025 21:04:52
+    [COMPANY_DATE_MODIFY] => 11.09.2025 21:04:52
+    [COMPANY_OPENED] => Y
+    [COMPANY_IS_MY_COMPANY] => N
+    [COMPANY_WEBFORM_ID] => 
+    [COMPANY_ORIGINATOR_ID] => 
+    [COMPANY_ORIGIN_ID] => 
+    [COMPANY_ORIGIN_VERSION] => 
+    [COMPANY_CATEGORY_ID] => 0
+    [COMPANY_LAST_ACTIVITY_BY] => 1
+    [COMPANY_LAST_ACTIVITY_TIME] => 11.09.2025 21:04:52
+    [UTM_SOURCE] => 
+    [UTM_MEDIUM] => 
+    [UTM_CAMPAIGN] => 
+    [UTM_CONTENT] => 
+    [UTM_TERM] => 
+    [LAST_COMMUNICATION_TIME] => 
+    [LAST_ACTIVITY_BY] => 1
+)
+
+
+Получили событие:
+3
+
+ПОЛЯ:
+Array
+(
+    [PROPERTY_VALUES] => Array
+        (
+            [SUMM] => 91000|RUB
+            [DEALID] => 3
+        )
+
+    [WF] => N
+    [SEARCHABLE_CONTENT] => 
+91000|RUB
+ПОКУПКА ПО
+    [ID] => 114
+    [IBLOCK_ID] => 23
+    [RESULT] => 1
+)
+
+
+Сделку нашли:
+3
+
+iBlock:
+91000|RUB
+
+из Сделки:
+91000|RUB
+
+Произошла запись:
+Array
+(
+    [ID] => 114
+    [SUMM] => 191000|RUB
+)
+
+
+Получили событие:
+5
+
+ПОЛЯ:
+Array
+(
+    [ACTIVE] => Y
+    [MODIFIED_BY] => 1
+    [ACTIVE_FROM] => 
+    [ACTIVE_TO] => 
+    [SORT] => 500
+    [NAME] => Тест
+    [CODE] => Test
+    [TAGS] => 
+    [PREVIEW_TEXT] => 
+    [PREVIEW_TEXT_TYPE] => text
+    [DETAIL_TEXT] => 
+    [DETAIL_TEXT_TYPE] => text
+    [TMP_ID] => 0
+    [PROPERTY_VALUES] => Array
+        (
+            [88] => Array
+                (
+                    [n0] => Array
+                        (
+                            [VALUE] => 
+                        )
+
+                )
+
+            [87] => Array
+                (
+                    [313] => Array
+                        (
+                            [VALUE] => 5
+                        )
+
+                )
+
+            [86] => Array
+                (
+                    [312] => Array
+                        (
+                            [VALUE] => 72500|RUB
+                        )
+
+                )
+
+        )
+
+    [IBLOCK_SECTION] => Array
+        (
+        )
+
+    [IPROPERTY_TEMPLATES] => Array
+        (
+            [ELEMENT_META_TITLE] => 
+            [ELEMENT_META_KEYWORDS] => 
+            [ELEMENT_META_DESCRIPTION] => 
+            [ELEMENT_PAGE_TITLE] => 
+            [ELEMENT_PREVIEW_PICTURE_FILE_ALT] => 
+            [ELEMENT_PREVIEW_PICTURE_FILE_TITLE] => 
+            [ELEMENT_PREVIEW_PICTURE_FILE_NAME] => 
+            [ELEMENT_DETAIL_PICTURE_FILE_ALT] => 
+            [ELEMENT_DETAIL_PICTURE_FILE_TITLE] => 
+            [ELEMENT_DETAIL_PICTURE_FILE_NAME] => 
+        )
+
+    [WF] => N
+    [SEARCHABLE_CONTENT] => ТЕСТ
+СЕРГЕЙ ЗАМАЛЕТДИНОВ
+ПОТЕНЦИАЛЬНАЯ СДЕЛКА
+72500|RUB
+    [ID] => 113
+    [IBLOCK_ID] => 23
+    [RESULT] => 1
+)
+
+
+Сделку нашли:
+5
+
+Завшли в условие записи:
+
+
+ЧТО ПИШЕМ:
+Array
+(
+    [OPPORTUNITY] => 72500
+    [CURRENCY_ID] => RUB
+)
+
+
+Данные сделки:
+Array
+(
+    [ID] => 5
+    [TITLE] => Потенциальная сделка
+    [TYPE_ID] => GOODS
+    [STAGE_ID] => NEW
+    [ORDER_STAGE] => 
+    [PROBABILITY] => 65
+    [CURRENCY_ID] => RUB
+    [EXCH_RATE] => 1.0000
+    [OPPORTUNITY] => 72500.00
+    [IS_MANUAL_OPPORTUNITY] => Y
+    [TAX_VALUE] => 
+    [ACCOUNT_CURRENCY_ID] => RUB
+    [OPPORTUNITY_ACCOUNT] => 72500.00
+    [TAX_VALUE_ACCOUNT] => 0.00
+    [LEAD_ID] => 
+    [COMPANY_ID] => 3
+    [COMPANY_ADDRESS] => 
+    [COMPANY_ADDRESS_LEGAL] => 
+    [CONTACT_ID] => 3
+    [CONTACT_ADDRESS] => 
+    [QUOTE_ID] => 
+    [QUOTE_TITLE] => 
+    [BEGINDATE] => 01.04.2011
+    [CLOSEDATE] => 07.05.2011
+    [ASSIGNED_BY_ID] => 1
+    [ASSIGNED_BY_LOGIN] => admin
+    [ASSIGNED_BY_NAME] => Сергей
+    [ASSIGNED_BY_LAST_NAME] => Замалетдинов
+    [ASSIGNED_BY_SECOND_NAME] => 
+    [ASSIGNED_BY_WORK_POSITION] => 
+    [ASSIGNED_BY_PERSONAL_PHOTO] => 
+    [CREATED_BY_ID] => 1
+    [CREATED_BY_LOGIN] => admin
+    [CREATED_BY_NAME] => Сергей
+    [CREATED_BY_LAST_NAME] => Замалетдинов
+    [CREATED_BY_SECOND_NAME] => 
+    [MODIFY_BY_ID] => 1
+    [MODIFY_BY_LOGIN] => admin
+    [MODIFY_BY_NAME] => Сергей
+    [MODIFY_BY_LAST_NAME] => Замалетдинов
+    [MODIFY_BY_SECOND_NAME] => 
+    [DATE_CREATE] => 11.09.2025 21:04:52
+    [DATE_MODIFY] => 17.12.2025 00:02:48
+    [OPENED] => N
+    [CLOSED] => N
+    [COMMENTS] => 
+    [ADDITIONAL_INFO] => 
+    [LOCATION_ID] => 
+    [CATEGORY_ID] => 0
+    [STAGE_SEMANTIC_ID] => P
+    [IS_NEW] => Y
+    [IS_RECURRING] => N
+    [IS_RETURN_CUSTOMER] => N
+    [IS_REPEATED_APPROACH] => N
+    [SOURCE_ID] => 
+    [SOURCE_DESCRIPTION] => 
+    [WEBFORM_ID] => 
+    [ORIGINATOR_ID] => 
+    [ORIGIN_ID] => 
+    [MOVED_BY_ID] => 1
+    [MOVED_TIME] => 11.09.2025 21:04:52
+    [PRODUCT_ID] => 
+    [EVENT_ID] => 
+    [EVENT_DATE] => 
+    [EVENT_DESCRIPTION] => 
+    [LAST_ACTIVITY_TIME] => 11.09.2025 21:04:52
+    [ASSIGNED_BY] => 1
+    [CREATED_BY] => 1
+    [MODIFY_BY] => 1
+    [MOVED_BY] => 1
+    [CONTACT_POST] => Директор
+    [CONTACT_COMMENTS] => 
+    [CONTACT_HONORIFIC] => 
+    [CONTACT_NAME] => Глеб
+    [CONTACT_SECOND_NAME] => Николаевич
+    [CONTACT_LAST_NAME] => Титов
+    [CONTACT_FULL_NAME] => Глеб Титов
+    [CONTACT_PHOTO] => 68
+    [CONTACT_LEAD_ID] => 
+    [CONTACT_TYPE_ID] => PARTNER
+    [CONTACT_SOURCE_ID] => PARTNER
+    [CONTACT_SOURCE_DESCRIPTION] => 
+    [CONTACT_COMPANY_ID] => 3
+    [CONTACT_BIRTHDATE] => 
+    [CONTACT_BIRTHDAY_SORT] => 1024
+    [CONTACT_EXPORT] => Y
+    [CONTACT_HAS_PHONE] => N
+    [CONTACT_HAS_EMAIL] => Y
+    [CONTACT_HAS_IMOL] => N
+    [CONTACT_DATE_CREATE] => 11.09.2025 21:04:51
+    [CONTACT_DATE_MODIFY] => 11.09.2025 21:04:51
+    [CONTACT_ASSIGNED_BY_ID] => 1
+    [CONTACT_CREATED_BY_ID] => 1
+    [CONTACT_MODIFY_BY_ID] => 1
+    [CONTACT_OPENED] => Y
+    [CONTACT_WEBFORM_ID] => 
+    [CONTACT_ORIGINATOR_ID] => 
+    [CONTACT_ORIGIN_ID] => 
+    [CONTACT_ORIGIN_VERSION] => 
+    [CONTACT_FACE_ID] => 
+    [CONTACT_CATEGORY_ID] => 0
+    [CONTACT_LAST_ACTIVITY_BY] => 1
+    [CONTACT_LAST_ACTIVITY_TIME] => 11.09.2025 21:04:51
+    [COMPANY_TYPE] => PARTNER
+    [COMPANY_TITLE] => ИП "Титов Г.Н"
+    [COMPANY_LOGO] => 75
+    [COMPANY_LEAD_ID] => 
+    [COMPANY_HAS_PHONE] => N
+    [COMPANY_HAS_EMAIL] => Y
+    [COMPANY_HAS_IMOL] => N
+    [COMPANY_ASSIGNED_BY_ID] => 1
+    [COMPANY_CREATED_BY_ID] => 1
+    [COMPANY_MODIFY_BY_ID] => 1
+    [COMPANY_BANKING_DETAILS] => 
+    [COMPANY_INDUSTRY] => IT
+    [COMPANY_REVENUE] => 300000
+    [COMPANY_CURRENCY_ID] => RUB
+    [COMPANY_EMPLOYEES] => EMPLOYEES_1
+    [COMPANY_COMMENTS] => 
+    [COMPANY_DATE_CREATE] => 11.09.2025 21:04:52
+    [COMPANY_DATE_MODIFY] => 11.09.2025 21:04:52
+    [COMPANY_OPENED] => Y
+    [COMPANY_IS_MY_COMPANY] => N
+    [COMPANY_WEBFORM_ID] => 
+    [COMPANY_ORIGINATOR_ID] => 
+    [COMPANY_ORIGIN_ID] => 
+    [COMPANY_ORIGIN_VERSION] => 
+    [COMPANY_CATEGORY_ID] => 0
+    [COMPANY_LAST_ACTIVITY_BY] => 1
+    [COMPANY_LAST_ACTIVITY_TIME] => 11.09.2025 21:04:52
+    [UTM_SOURCE] => 
+    [UTM_MEDIUM] => 
+    [UTM_CAMPAIGN] => 
+    [UTM_CONTENT] => 
+    [UTM_TERM] => 
+    [LAST_COMMUNICATION_TIME] => 
+    [LAST_ACTIVITY_BY] => 1
+)
+
+
+iBlock:
+72500|RUB
+
+из Сделки:
+292009.89|RUB
+

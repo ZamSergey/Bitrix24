@@ -1,0 +1,102 @@
+MyTestData:
+Array
+(
+    [PRODUCT_ROWS] => Array
+        (
+        )
+
+    [OBSERVER_IDS] => Array
+        (
+        )
+
+    [COMMENTS] => 
+    [CONTACT_BINDINGS] => Array
+        (
+            [0] => Array
+                (
+                    [CONTACT_ID] => 3
+                    [SORT] => 10
+                    [ROLE_ID] => 0
+                    [IS_PRIMARY] => Y
+                )
+
+        )
+
+    [CONTACT_IDS] => Array
+        (
+            [0] => 3
+        )
+
+    [CONTACT_ID] => 3
+    [UTM_SOURCE] => 
+    [UTM_MEDIUM] => 
+    [UTM_CAMPAIGN] => 
+    [UTM_CONTENT] => 
+    [UTM_TERM] => 
+    [ID] => 5
+    [DATE_CREATE] => 11.09.2025 21:04:52
+    [DATE_CREATE_SHORT] => 
+    [DATE_MODIFY] => 13.12.2025 15:03:03
+    [DATE_MODIFY_SHORT] => 
+    [CREATED_BY_ID] => 1
+    [MODIFY_BY_ID] => 1
+    [ASSIGNED_BY_ID] => 1
+    [OPENED] => N
+    [LEAD_ID] => 
+    [COMPANY_ID] => 3
+    [QUOTE_ID] => 
+    [TITLE] => Потенциальная сделка
+    [PRODUCT_ID] => 
+    [CATEGORY_ID] => 0
+    [STAGE_ID] => NEW
+    [STAGE_SEMANTIC_ID] => P
+    [IS_NEW] => Y
+    [IS_RECURRING] => N
+    [IS_RETURN_CUSTOMER] => N
+    [IS_REPEATED_APPROACH] => N
+    [CLOSED] => N
+    [TYPE_ID] => GOODS
+    [OPPORTUNITY] => 18300
+    [IS_MANUAL_OPPORTUNITY] => Y
+    [TAX_VALUE] => 0
+    [CURRENCY_ID] => RUB
+    [OPPORTUNITY_ACCOUNT] => 18300
+    [TAX_VALUE_ACCOUNT] => 0
+    [ACCOUNT_CURRENCY_ID] => RUB
+    [PROBABILITY] => 65
+    [BEGINDATE] => 01.04.2011
+    [BEGINDATE_SHORT] => 
+    [CLOSEDATE] => 07.05.2011
+    [CLOSEDATE_SHORT] => 
+    [EVENT_DATE] => 
+    [EVENT_DATE_SHORT] => 
+    [EVENT_ID] => 
+    [EVENT_DESCRIPTION] => 
+    [EXCH_RATE] => 1
+    [LOCATION_ID] => 
+    [WEBFORM_ID] => 0
+    [SOURCE_ID] => 
+    [SOURCE_DESCRIPTION] => 
+    [ORIGINATOR_ID] => 
+    [ORIGIN_ID] => 
+    [ADDITIONAL_INFO] => 
+    [SEARCH_CONTENT] => 5 Потенциальная сделка 18900.00 Российский рубль Сергей Замалетдинов Замалетдинов ИП "Титов Г.Н" vasb lg fbsg arg Глеб Титов obff Продажа товара Новая 01.04.2011 07.05.2011
+    [ORDER_STAGE] => 
+    [MOVED_BY_ID] => 1
+    [MOVED_TIME] => 11.09.2025 21:04:52
+    [LAST_ACTIVITY_BY] => 1
+    [LAST_ACTIVITY_TIME] => 11.09.2025 21:04:52
+    [IS_WORK] => 
+    [IS_WON] => 
+    [IS_LOSE] => 
+    [RECEIVED_AMOUNT] => 
+    [LOST_AMOUNT] => 
+    [HAS_PRODUCTS] => 
+    [LAST_COMMUNICATION_TIME] => 
+    [LAST_COMMUNICATION_CALL_TIME] => 
+    [LAST_COMMUNICATION_EMAIL_TIME] => 
+    [LAST_COMMUNICATION_IMOL_TIME] => 
+    [LAST_COMMUNICATION_WEBFORM_TIME] => 
+)
+
+

@@ -1,0 +1,79 @@
+Получили событие:
+
+
+ПОЛЯ:
+Array
+(
+    [ACTIVE] => Y
+    [MODIFIED_BY] => 1
+    [ACTIVE_FROM] => 
+    [ACTIVE_TO] => 
+    [SORT] => 500
+    [NAME] => Тест
+    [CODE] => Test
+    [TAGS] => 
+    [PREVIEW_TEXT] => 
+    [PREVIEW_TEXT_TYPE] => text
+    [DETAIL_TEXT] => 
+    [DETAIL_TEXT_TYPE] => text
+    [TMP_ID] => 0
+    [PROPERTY_VALUES] => Array
+        (
+            [88] => Array
+                (
+                    [n0] => Array
+                        (
+                            [VALUE] => 
+                        )
+
+                )
+
+            [87] => Array
+                (
+                    [313] => Array
+                        (
+                            [VALUE] => 5
+                        )
+
+                )
+
+            [86] => Array
+                (
+                    [312] => Array
+                        (
+                            [VALUE] => 2500|RUB
+                        )
+
+                )
+
+        )
+
+    [IBLOCK_SECTION] => Array
+        (
+        )
+
+    [IPROPERTY_TEMPLATES] => Array
+        (
+            [ELEMENT_META_TITLE] => 
+            [ELEMENT_META_KEYWORDS] => 
+            [ELEMENT_META_DESCRIPTION] => 
+            [ELEMENT_PAGE_TITLE] => 
+            [ELEMENT_PREVIEW_PICTURE_FILE_ALT] => 
+            [ELEMENT_PREVIEW_PICTURE_FILE_TITLE] => 
+            [ELEMENT_PREVIEW_PICTURE_FILE_NAME] => 
+            [ELEMENT_DETAIL_PICTURE_FILE_ALT] => 
+            [ELEMENT_DETAIL_PICTURE_FILE_TITLE] => 
+            [ELEMENT_DETAIL_PICTURE_FILE_NAME] => 
+        )
+
+    [WF] => N
+    [SEARCHABLE_CONTENT] => ТЕСТ
+СЕРГЕЙ ЗАМАЛЕТДИНОВ
+ПОТЕНЦИАЛЬНАЯ СДЕЛКА
+2500|RUB
+    [ID] => 113
+    [IBLOCK_ID] => 23
+    [RESULT] => 1
+)
+
+
