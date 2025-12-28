@@ -79,7 +79,7 @@ function TestHandler ($arFields) {
         return;
     }
 
-    $iblockId = 24; // ID инфоблока Test    
+    $iblockId = 23; // ID инфоблока Test    
 
     
 
@@ -156,7 +156,7 @@ $eventManager->AddEventHandler(
 
 function iblockUpdateHandler ($arFields) { 
     // Отслеживаем изменения только в нужном нам инфоблоке
-    if(empty($arFields['ID']) || $arFields['IBLOCK_ID'] != 24) {
+    if(empty($arFields['ID']) || $arFields['IBLOCK_ID'] != 23) {
         return;
     }
        $elements = CIBlockElement::GetList(

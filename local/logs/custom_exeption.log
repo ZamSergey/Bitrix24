@@ -156,3 +156,32 @@ syntax error, unexpected identifier "print_r" (0)
 	/home/bitrix/www/bitrix/admin/php_command_line.php:2
 ----------
 
+OTUS 2025-12-23 23:37:02 - Host:  - UNCAUGHT_EXCEPTION - [Bitrix\Main\DB\ConnectionException] 
+Mysql connect error [localhost]: (2002) No such file or directory (400)
+/home/bitrix/www/bitrix/modules/main/lib/db/mysqliconnection.php:86
+#0: Bitrix\Main\DB\MysqliConnection->connectInternal
+	/home/bitrix/www/bitrix/modules/main/lib/data/connection.php:53
+#1: Bitrix\Main\Data\Connection->getResource
+	/home/bitrix/www/bitrix/modules/main/lib/db/mysqlisqlhelper.php:409
+#2: Bitrix\Main\DB\MysqliSqlHelper->forSql
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:210
+#3: Bitrix\Main\Config\Option::load
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:83
+#4: Bitrix\Main\Config\Option::getRealValue
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:32
+#5: Bitrix\Main\Config\Option::get
+	/home/bitrix/www/bitrix/modules/main/lib/httprequest.php:422
+#6: Bitrix\Main\HttpRequest->prepareCookie
+	/home/bitrix/www/bitrix/modules/main/lib/httprequest.php:70
+#7: Bitrix\Main\HttpRequest->__construct
+	/home/bitrix/www/bitrix/modules/main/lib/httpapplication.php:39
+#8: Bitrix\Main\HttpApplication->initializeContext
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:130
+#9: Bitrix\Main\Application->initializeExtendedKernel
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#10: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#11: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
