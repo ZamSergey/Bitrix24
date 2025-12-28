@@ -31,11 +31,6 @@ function findDealIdByActivityId($activityId) {
     return false;
 }
 
-writeToLog("Hello world!");
-writeToLog(file_get_contents('php://input'));
-http_response_code(200);
-echo "Hello world!";
-
 // Логируем входящий запрос для отладки
 // writeToLog('b24_events.log', "\n" . date('Y-m-d H:i:s') . " - New Event:\n" . file_get_contents('php://input') . "\n", FILE_APPEND);
 
@@ -81,28 +76,6 @@ writeToLog("Сделка");
 writeToLog(print_r($dealResult ,true));
 
 
-
-
-         
-
-// Проверяем, что это валидные данные события
-if (isset($data['event']) && $data['event'] == 'OnCrmActivityAdd' && isset($data['data']['FIELDS']['ID'])) {
-    
-    $activityId = $data['data']['FIELDS']['ID'];
-    writeToLog("Зашли в условие");
-    writeToLog($activityId);
-    
-    // Ваша логика обработки нового дела
-    // Например, получим полные данные по делу через REST API
-    // ... 
-    
-    // Обязательно возвращаем статус '200 OK'
-    http_response_code(200);
-    echo json_encode(['status' => 'success']);
-    exit;
-}
-
-// Если данные невалидны, все равно возвращаем 200, чтобы Bitrix24 не считал доставку неудачной
 http_response_code(200);
 echo json_encode(['status' => 'ignored']);
 
