@@ -185,3 +185,676 @@ Mysql connect error [localhost]: (2002) No such file or directory (400)
 	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
 ----------
 
+OTUS 2026-01-05 13:50:05 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Rest\BookTable" not found (0)
+/home/bitrix/www/local/php_interface/src/Rest/Events.php:145
+#0: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#1: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#2: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#3: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#4: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#5: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#8: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#9: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#10: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#11: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#12: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#13: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#14: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 13:51:08 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Rest\BookTable" not found (0)
+/home/bitrix/www/local/php_interface/src/Rest/Events.php:145
+#0: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#1: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#2: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#3: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#4: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#5: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#8: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#9: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#10: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#11: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#12: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#13: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#14: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 13:52:17 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Rest\BookTable" not found (0)
+/home/bitrix/www/local/php_interface/src/Rest/Events.php:146
+#0: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#1: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#2: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#3: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#4: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#5: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#8: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#9: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#10: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#11: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#12: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#13: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#14: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 13:57:10 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Rest\BookTable" not found (0)
+/home/bitrix/www/local/php_interface/src/Rest/Events.php:146
+#0: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#1: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#2: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#3: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#4: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#5: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#8: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#9: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#10: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#11: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#12: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#13: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#14: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 13:57:13 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Rest\BookTable" not found (0)
+/home/bitrix/www/local/php_interface/src/Rest/Events.php:146
+#0: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#1: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#2: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#3: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#4: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#5: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#8: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#9: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#10: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#11: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#12: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#13: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#14: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 13:58:06 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Rest\BookTable" not found (0)
+/home/bitrix/www/local/php_interface/src/Rest/Events.php:146
+#0: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#1: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#2: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#3: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#4: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#5: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#8: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#9: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#10: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#11: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#12: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#13: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#14: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 13:58:44 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Rest\BookTable" not found (0)
+/home/bitrix/www/local/php_interface/src/Rest/Events.php:146
+#0: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#1: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#2: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#3: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#4: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#5: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#8: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#9: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#10: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#11: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#12: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#13: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#14: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 13:59:38 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+Bitrix\Main\ORM\Data\DataManager::update(): Argument #2 ($data) must be of type array, null given, called in /home/bitrix/www/local/php_interface/src/Rest/Events.php on line 146 (0)
+/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:1256
+#0: Bitrix\Main\ORM\Data\DataManager::update
+	/home/bitrix/www/local/php_interface/src/Rest/Events.php:146
+#1: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#2: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#3: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#4: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#5: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#6: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#7: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#8: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#9: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#10: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#11: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#12: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#13: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#14: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#15: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 14:00:08 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+Bitrix\Main\ORM\Data\DataManager::update(): Argument #2 ($data) must be of type array, null given, called in /home/bitrix/www/local/php_interface/src/Rest/Events.php on line 146 (0)
+/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:1256
+#0: Bitrix\Main\ORM\Data\DataManager::update
+	/home/bitrix/www/local/php_interface/src/Rest/Events.php:146
+#1: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#2: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#3: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#4: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#5: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#6: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#7: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#8: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#9: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#10: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#11: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#12: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#13: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#14: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#15: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 14:01:24 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+Bitrix\Main\ORM\Data\DataManager::update(): Argument #2 ($data) must be of type array, null given, called in /home/bitrix/www/local/php_interface/src/Rest/Events.php on line 146 (0)
+/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:1256
+#0: Bitrix\Main\ORM\Data\DataManager::update
+	/home/bitrix/www/local/php_interface/src/Rest/Events.php:146
+#1: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#2: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#3: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#4: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#5: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#6: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#7: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#8: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#9: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#10: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#11: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#12: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#13: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#14: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#15: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 14:02:25 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+Bitrix\Main\ORM\Data\DataManager::update(): Argument #2 ($data) must be of type array, null given, called in /home/bitrix/www/local/php_interface/src/Rest/Events.php on line 146 (0)
+/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:1256
+#0: Bitrix\Main\ORM\Data\DataManager::update
+	/home/bitrix/www/local/php_interface/src/Rest/Events.php:146
+#1: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#2: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#3: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#4: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#5: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#6: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#7: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#8: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#9: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#10: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#11: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#12: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#13: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#14: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#15: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 14:05:21 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+Bitrix\Main\ORM\Data\DataManager::update(): Argument #2 ($data) must be of type array, null given, called in /home/bitrix/www/local/php_interface/src/Rest/Events.php on line 146 (0)
+/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:1256
+#0: Bitrix\Main\ORM\Data\DataManager::update
+	/home/bitrix/www/local/php_interface/src/Rest/Events.php:146
+#1: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#2: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#3: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#4: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#5: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#6: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#7: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#8: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#9: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#10: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#11: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#12: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#13: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#14: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#15: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 21:40:10 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Undefined constant "Otus\Rest\bookId" (0)
+/home/bitrix/www/local/php_interface/src/Rest/Events.php:159
+#0: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#1: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#2: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#3: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#4: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#5: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#8: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#9: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#10: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#11: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#12: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#13: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#14: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 22:11:17 - Host: 192.168.1.185:80 - UNKNOWN - [Exception] 
+Failed to parse time string (11.01.2012 00:00:001) at position 19 (1): Unexpected character (0)
+/home/bitrix/www/local/php_interface/src/Rest/Events.php:174
+#0: DateTime->__construct
+	/home/bitrix/www/local/php_interface/src/Rest/Events.php:174
+#1: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#2: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#3: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#4: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#5: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#6: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#7: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#8: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#9: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#10: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#11: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#12: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#13: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#14: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#15: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 22:16:17 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+Bitrix\Main\ORM\Data\DataManager::update(): Argument #2 ($data) must be of type array, null given, called in /home/bitrix/www/local/php_interface/src/Rest/Events.php on line 169 (0)
+/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:1256
+#0: Bitrix\Main\ORM\Data\DataManager::update
+	/home/bitrix/www/local/php_interface/src/Rest/Events.php:169
+#1: Otus\Rest\Events::update
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#2: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#3: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#4: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#5: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#6: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#7: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#8: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#9: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#10: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#11: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#12: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#13: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#14: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#15: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-05 22:17:22 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined method Bitrix\Main\ORM\Query\Result::isSuccess() (0)
+/home/bitrix/www/local/php_interface/src/Rest/Events.php:99
+#0: Otus\Rest\Events::read
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#1: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#2: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#3: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#4: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#5: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#8: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#9: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#10: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#11: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#12: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#13: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#14: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-07 12:21:02 - Host:  - UNCAUGHT_EXCEPTION - [Bitrix\Main\DB\ConnectionException] 
+Mysql connect error [localhost]: (2002) No such file or directory (400)
+/home/bitrix/www/bitrix/modules/main/lib/db/mysqliconnection.php:86
+#0: Bitrix\Main\DB\MysqliConnection->connectInternal
+	/home/bitrix/www/bitrix/modules/main/lib/data/connection.php:53
+#1: Bitrix\Main\Data\Connection->getResource
+	/home/bitrix/www/bitrix/modules/main/lib/db/mysqlisqlhelper.php:409
+#2: Bitrix\Main\DB\MysqliSqlHelper->forSql
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:210
+#3: Bitrix\Main\Config\Option::load
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:83
+#4: Bitrix\Main\Config\Option::getRealValue
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:32
+#5: Bitrix\Main\Config\Option::get
+	/home/bitrix/www/bitrix/modules/main/lib/httprequest.php:422
+#6: Bitrix\Main\HttpRequest->prepareCookie
+	/home/bitrix/www/bitrix/modules/main/lib/httprequest.php:70
+#7: Bitrix\Main\HttpRequest->__construct
+	/home/bitrix/www/bitrix/modules/main/lib/httpapplication.php:39
+#8: Bitrix\Main\HttpApplication->initializeContext
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:130
+#9: Bitrix\Main\Application->initializeExtendedKernel
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#10: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#11: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS 2026-01-07 13:27:05 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined method Bitrix\Main\ORM\Query\Result::getErrorMessages() (0)
+/home/bitrix/www/local/php_interface/src/Rest/Events.php:98
+#0: Otus\Rest\Events::read
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#1: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#2: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#3: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#4: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#5: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#8: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#9: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#10: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#11: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#12: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#13: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#14: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-01-07 13:27:11 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined method Bitrix\Main\ORM\Query\Result::getErrorMessages() (0)
+/home/bitrix/www/local/php_interface/src/Rest/Events.php:98
+#0: Otus\Rest\Events::read
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:243
+#1: CRestServer->processCall
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:840
+#2: CRestServer->processExecution
+	/home/bitrix/www/bitrix/modules/rest/classes/general/rest.php:126
+#3: CRestServer->process
+	/home/bitrix/www/bitrix/components/bitrix/rest.server/component.php:107
+#4: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#5: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/rest.provider/component.php:8
+#8: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:622
+#9: CBitrixComponent->__includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:699
+#10: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#11: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/rest/services/rest/index.php:18
+#12: require(string)
+	/home/bitrix/www/bitrix/services/rest/index.php:1
+#13: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#14: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+

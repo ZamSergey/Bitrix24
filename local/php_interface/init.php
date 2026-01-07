@@ -63,6 +63,8 @@ $eventManager->AddEventHandler(
     'TestHandler'
 );
 
+$eventManager->addEventHandlerCompatible('rest', 'OnRestServiceBuildDescription', ['Otus\Rest\Events', 'OnRestServiceBuildDescriptionHandler']);
+
 
 function TestHandler ($arFields) {
      // Проверяем, что есть ID сделки

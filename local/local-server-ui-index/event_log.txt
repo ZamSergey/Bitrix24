@@ -1,0 +1,14 @@
+[2026-01-05 12:38:11] Уже забинжены
+[2026-01-05 12:38:11] Array
+(
+    [error] => curl_error
+    [error_information] => SSL certificate problem: self-signed certificate
+)
+
+[2026-01-05 12:38:11] Ошибка подписки:
+[2026-01-05 12:38:11] Array
+(
+    [error] => curl_error
+    [error_information] => SSL certificate problem: self-signed certificate
+)
+
