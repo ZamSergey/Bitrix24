@@ -2,21 +2,25 @@
 use Otus\Orm\CarTable;
 // use Otus\Crm\Market\Agents;
 use Bitrix\Main\Type\Date;
-
+use Bitrix\Main\Loader;
+use Bitrix\Crm\Model\Dynamic\TypeTable;
+use Bitrix\Crm\StatusTable;
+use Bitrix\Crm\Service\Container;
 
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php';
 
-// if (!CModule::IncludeModule("iblock")) {
-//     echo "Ошибка: Модуль инфоблоков не установлен";
-//     return;
-// }
+if (!CModule::IncludeModule("crm")) {
+    echo "Ошибка: Модуль инфоблоков не установлен";
+    return;
+}
 
-// if (!CModule::IncludeModule("catalog")) {
-//     echo "Ошибка: Модуль каталога не установлен";
-//     return;
-// }
-
+if (!CModule::IncludeModule("iblock")) {
+    echo "Ошибка: Модуль каталога не установлен";
+    return;
+}
+// \Bitrix\Main\Loader::includeModule('crm');
+// \Bitrix\Main\Loader::includeModule('iblock');
 
 /**
  * @var CMain $APPLICATION
@@ -95,7 +99,52 @@ $APPLICATION->SetTitle('Обновление запасов');
 //     echo "Всего на складе: {$product['QUANTITY']} шт.<br>";
 //     echo "Зарезервировано: {$product['QUANTITY_RESERVED']} шт.<br><br>";
 // }
+// $stages = CCrmStatus::GetStatusList('DEAL_STAGE');
+// print_r($stages);
 
+$entityTypeId = 1040;
+      $factory = \Bitrix\Crm\Service\Container::getInstance()->getFactory($entityTypeId);
+        print_r($factory);
+if (!$factory) {
+    echo '!!!!';
+    // Попробуем получить динамический тип
+    $typesMap = \Bitrix\Crm\Service\Container::getInstance()->getDynamicTypesMap();
+    
+    // Ищем тип
+    $type = null;
+    foreach ($typesMap->getTypes() as $dynamicType) {
+        if ($dynamicType->getEntityTypeId() == $entityTypeId) {
+            $type = $dynamicType;
+            break;
+        }
+    }
+    
+    if (!$type) {
+        return "Dynamic type $entityTypeId not found in map";
+    }
+    
+    // Снова пытаемся получить фабрику
+    $factory = \Bitrix\Crm\Service\Container::getInstance()->getFactory($entityTypeId);
+}
+
+if ($factory) {
+    $item = $factory->createItem();
+    $item->setTitle('Тестовый элемент');
+    $item->setAssignedById(1);
+    
+    // Стадия
+    $stages = $factory->getStages();
+    print_r(  $stages);
+    if ($stages && $stages->getAll()) {
+       
+        $stageList = $stages->getAll();
+        $firstStage = reset($stageList);
+         
+        $item->setStageId($firstStage->getStatusId());
+    }
+    
+    $result = $item->save();
+    }
 // Agents::cleanOldLeads();
 \Otus\Crm\Market\Agents::cleanOldLeads();
 
