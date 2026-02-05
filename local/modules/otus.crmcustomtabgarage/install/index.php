@@ -11,14 +11,14 @@ use Bitrix\Main\SystemException;
 use Bitrix\Main\IO\InvalidPathException;
 use Bitrix\Main\DB\SqlQueryException;
 use Bitrix\Main\LoaderException;
-use Otus\Crmcustomtab\Orm\TestTable;
-use Otus\Crmcustomtab\Data\TestDataInstaller;
+use Otus\Crmcustomtabgarage\Orm\CarTable;
+use Otus\Crmcustomtabgarage\Data\CarDataInstaller;
 
 Loc::getMessage(__FILE__);
 
-class otus_crmcustomtab extends CModule
+class otus_crmcustomtabgarage extends CModule
 {
-    public $MODULE_ID = 'otus.crmcustomtab';
+    public $MODULE_ID = 'otus.crmcustomtabgarage';
     public $MODULE_SORT = 500;
     public $MODULE_VERSION;
     public $MODULE_DESCRIPTION;
@@ -31,15 +31,11 @@ class otus_crmcustomtab extends CModule
         $arModuleVersion = [];
         include __DIR__ . '/version.php';
         $this->MODULE_VERSION = $arModuleVersion['VERSION'];
-        $this->MODULE_VERSION_DATE = $arModuleVersion['VERSION_DATE'];
-        // $this->MODULE_DESCRIPTION = Loc::getMessage('AHOLIN_CRMCUSTOMTAB_INSTALL_MODULE_DESCRIPTION');
-        // $this->MODULE_NAME = Loc::getMessage('AHOLIN_CRMCUSTOMTAB_INSTALL_MODULE_NAME');
-        // $this->PARTNER_NAME = Loc::getMessage('AHOLIN_CRMCUSTOMTAB_PARTNER_NAME');
-        // $this->PARTNER_URI = Loc::getMessage('AHOLIN_CRMCUSTOMTAB_PARTNER_URI');
-        $this->MODULE_DESCRIPTION = 'Описание модуля';
-        $this->MODULE_NAME = 'Тестовый таб в сделке';
-        $this->PARTNER_NAME = 'Имя для параметра Partner name';
-        $this->PARTNER_URI = 'партнер URL';
+        $this->MODULE_VERSION_DATE = $arModuleVersion['VERSION_DATE'];       
+        $this->MODULE_DESCRIPTION = 'Гараж клиента';
+        $this->MODULE_NAME = 'Гараж клиента';
+        $this->PARTNER_NAME = 'LTT OTUS PRODUCTION';
+        $this->PARTNER_URI = 'https://otus.ru/';
     }
 
     /**
@@ -114,7 +110,7 @@ class otus_crmcustomtab extends CModule
             'crm',
             'onEntityDetailsTabsInitialized',
             $this->MODULE_ID,
-            '\\Otus\\Crmcustomtab\\Crm\\Handlers',
+            '\\Otus\\Crmcustomtabgarage\\Crm\\Handlers',
             'updateTabs'
         );
     }
@@ -127,7 +123,7 @@ class otus_crmcustomtab extends CModule
             'crm',
             'onEntityDetailsTabsInitialized',
             $this->MODULE_ID,
-            '\\Otus\\Crmcustomtab\\Crm\\Handlers',
+            '\\Otus\\Crmcustomtabgarage\\Crm\\Handlers',
             'updateTabs'
         );
     }
@@ -176,15 +172,15 @@ class otus_crmcustomtab extends CModule
 
     private function addEntityElements(string $entityClass): void
     {
-        if ($entityClass === TestTable::class) {
-            TestDataInstaller::addTestData();
+        if ($entityClass === CarTable::class) {
+            CarDataInstaller::addTestData();
         }
     }
 
     private function getEntities(): array
     {
         return [            
-            TestTable::class,
+            CarTable::class,
         ];
     }
 

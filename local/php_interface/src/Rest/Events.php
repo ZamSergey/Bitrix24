@@ -45,8 +45,19 @@ class Events
     public static function add($arParams, $navStart, \CRestServer $server)
     {
        file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'PARAMS: '.var_export($arParams, true).PHP_EOL, FILE_APPEND);
-       file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'NAV: '.var_export($navStart, true).PHP_EOL, FILE_APPEND);
-       file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'SERVER: '.var_export($server, true).PHP_EOL, FILE_APPEND);
+    //    file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'NAV: '.var_export($navStart, true).PHP_EOL, FILE_APPEND);
+    //    file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'SERVER: '.var_export($server, true).PHP_EOL, FILE_APPEND);
+
+        $apartment = (int)($arParams['APARTMENT'] ?? 0);
+            
+        if ($apartment <= 0) {   
+            file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'ERROR: Params undefind', FILE_APPEND);         
+            throw new RestException(
+                'Params undefind.',
+                RestException::ERROR_ARGUMENT,
+                \CRestServer::STATUS_OK
+            );
+        }
 
        if(isset( $arParams['APARTMENT']['BUILD_DATE'])) {
             //Установка формата даты, иначе не сохраняется
@@ -60,9 +71,10 @@ class Events
             $arParams['ID'] = $id;
             // $event = new Event('main', 'onAfterOtusBookAdd', $arParams);
             // $event->send();
-
+            file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'SUCCES: new apartem added. ID '.$id.PHP_EOL, FILE_APPEND);
             return $id;
         } else {
+            file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'ERROR: '.$originDataStoreResult->getErrorMessages(), FILE_APPEND);
             throw new RestException(
                 json_encode($originDataStoreResult->getErrorMessages(), JSON_UNESCAPED_UNICODE),
                 RestException::ERROR_ARGUMENT,
@@ -83,8 +95,8 @@ class Events
     public static function read($arParams, $navStart, \CRestServer $server)
     {
        file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'PARAMS: '.var_export($arParams, true).PHP_EOL, FILE_APPEND);
-       file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'NAV: '.var_export($navStart, true).PHP_EOL, FILE_APPEND);
-       file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'SERVER: '.var_export($server, true).PHP_EOL, FILE_APPEND);
+    //    file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'NAV: '.var_export($navStart, true).PHP_EOL, FILE_APPEND);
+    //    file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'SERVER: '.var_export($server, true).PHP_EOL, FILE_APPEND);
         
         // Проверка существования комплекса
         $exists = ApartmentcomplexTable::getCount([            
@@ -92,6 +104,7 @@ class Events
         ]);
         
         if (!$exists) {
+            file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'ERROR: Invalid ID. Enter correct ID.', FILE_APPEND);
             throw new RestException(
                 'Invalid ID. Enter correct ID.',
                 RestException::ERROR_ARGUMENT,
@@ -102,10 +115,12 @@ class Events
         $originDataStoreResult = ApartmentcomplexTable::getById($arParams['ID']);
         
         if ($record = $originDataStoreResult->fetch()) {
+             file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'SUCCES: '.print_r($record, true), FILE_APPEND);
             
             return($record);
        
         } else {
+            file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'ERROR: Invalid ID. Enter correct ID.', FILE_APPEND);
             throw new RestException(
                 json_encode($originDataStoreResult->getErrorMessages(), JSON_UNESCAPED_UNICODE),
                 RestException::ERROR_ARGUMENT,
@@ -126,8 +141,8 @@ class Events
     {
 
        file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'PARAMS: '.var_export($arParams, true).PHP_EOL, FILE_APPEND);
-       file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'NAV: '.var_export($navStart, true).PHP_EOL, FILE_APPEND);
-       file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'SERVER: '.var_export($server, true).PHP_EOL, FILE_APPEND);
+    //    file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'NAV: '.var_export($navStart, true).PHP_EOL, FILE_APPEND);
+    //    file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'SERVER: '.var_export($server, true).PHP_EOL, FILE_APPEND);
 
         $request = Application::getInstance()->getContext()->getRequest();
         $isPost = $request->isPost();
@@ -141,7 +156,8 @@ class Events
 
         $apartment = (int)($arParams['ID'] ?? 0);
         
-        if ($apartment <= 0) {            
+        if ($apartment <= 0) {   
+            file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'ERROR: ID undefind.', FILE_APPEND);       
             throw new RestException(
                 'ID undefind.',
                 RestException::ERROR_ARGUMENT,
@@ -157,21 +173,35 @@ class Events
         ]);
         
         if (!$exists) {
+             file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'ERROR: Invalid ID. Enter correct ID.', FILE_APPEND); 
             throw new RestException(
                 'Invalid ID. Enter correct ID.',
                 RestException::ERROR_ARGUMENT,
                 \CRestServer::STATUS_OK
             );
         }
+       
         
         
         $fieldsToUpdate = $request->getPost('fields');
+
+        if (!$fieldsToUpdate) {
+            file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'ERROR: No params for update.', FILE_APPEND); 
+            throw new RestException(
+                'No params for update',
+                RestException::ERROR_ARGUMENT,
+                \CRestServer::STATUS_OK
+            );
+        }
+
+
         if(isset( $fieldsToUpdate['BUILD_DATE'])) {
             //Установка формата даты, иначе не сохраняется
             $fieldsToUpdate['BUILD_DATE'] = DateTime::createFromPhp(new \DateTime($fieldsToUpdate['BUILD_DATE']));
         }
         $updateResult = ApartmentcomplexTable::update($apartment, $fieldsToUpdate);
         if ($updateResult->isSuccess()) {
+            file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'Succes: apartment has updated. ID '.$apartment, FILE_APPEND);
             return $apartment;
         } else {
             throw new RestException(
@@ -193,8 +223,8 @@ class Events
     public static function delete($arParams, $navStart, \CRestServer $server)
     {
        file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'PARAMS: '.var_export($arParams, true).PHP_EOL, FILE_APPEND);
-       file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'NAV: '.var_export($navStart, true).PHP_EOL, FILE_APPEND);
-       file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'SERVER: '.var_export($server, true).PHP_EOL, FILE_APPEND);
+    //    file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'NAV: '.var_export($navStart, true).PHP_EOL, FILE_APPEND);
+    //    file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'SERVER: '.var_export($server, true).PHP_EOL, FILE_APPEND);
 
         $request = Application::getInstance()->getContext()->getRequest();
         $isPost = $request->isPost();
@@ -208,7 +238,8 @@ class Events
 
         $apartment = (int)($arParams['ID'] ?? 0);
         
-        if ($apartment <= 0) {            
+        if ($apartment <= 0) {  
+            file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'Error: ID undefind ', FILE_APPEND);          
             throw new RestException(
                 'ID undefind.',
                 RestException::ERROR_ARGUMENT,
@@ -224,6 +255,7 @@ class Events
         ]);
         
         if (!$exists) {
+            file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'Error: Invalid ID. This ID does not exist', FILE_APPEND); 
             throw new RestException(
                 'Invalid ID. This ID does not exist.',
                 RestException::ERROR_ARGUMENT,
@@ -234,6 +266,7 @@ class Events
       
         $updateResult = ApartmentcomplexTable::delete($apartment);
         if ($updateResult->isSuccess()) {
+            file_put_contents($_SERVER['DOCUMENT_ROOT'].'/logRest.txt', 'Success: Apartment has been deleted. ID '.$apartment, FILE_APPEND); 
             return $apartment;
         } else {
             throw new RestException(

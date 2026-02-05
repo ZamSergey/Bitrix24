@@ -283,7 +283,7 @@ class CustomEvents
         global $USER;
         $arJsConfig = array(
             'custom_start' => array(
-                'js' => '/local/js/custom/main.js',
+                'js' => ['/local/js/custom/main.js'],
                 'css' => '',
                 'rel' => array()
             )

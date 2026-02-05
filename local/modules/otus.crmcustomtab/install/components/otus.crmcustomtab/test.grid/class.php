@@ -62,7 +62,7 @@ class TestGrid extends \CBitrixComponent implements Controllerable
     private function prepareGridData(): void
     {
         $this->arResult['HEADERS'] = $this->getHeaders();
-        $this->arResult['FILTER_ID'] = 'BOOK_GRID';
+        $this->arResult['FILTER_ID'] = 'BOOK_GRID1';
 
         $gridOptions = new GridOptions($this->arResult['FILTER_ID']);
         $navParams = $gridOptions->getNavParams();
