@@ -72,3 +72,674 @@ syntax error, unexpected identifier "item" (0)
 	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
 ----------
 
+OTUS 2026-02-06 21:37:01 - Host:  - UNCAUGHT_EXCEPTION - [Bitrix\Main\DB\ConnectionException] 
+Mysql connect error [localhost]: (2002) No such file or directory (400)
+/home/bitrix/www/bitrix/modules/main/lib/db/mysqliconnection.php:86
+#0: Bitrix\Main\DB\MysqliConnection->connectInternal
+	/home/bitrix/www/bitrix/modules/main/lib/data/connection.php:53
+#1: Bitrix\Main\Data\Connection->getResource
+	/home/bitrix/www/bitrix/modules/main/lib/db/mysqlisqlhelper.php:409
+#2: Bitrix\Main\DB\MysqliSqlHelper->forSql
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:210
+#3: Bitrix\Main\Config\Option::load
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:83
+#4: Bitrix\Main\Config\Option::getRealValue
+	/home/bitrix/www/bitrix/modules/main/lib/config/option.php:32
+#5: Bitrix\Main\Config\Option::get
+	/home/bitrix/www/bitrix/modules/main/lib/httprequest.php:422
+#6: Bitrix\Main\HttpRequest->prepareCookie
+	/home/bitrix/www/bitrix/modules/main/lib/httprequest.php:70
+#7: Bitrix\Main\HttpRequest->__construct
+	/home/bitrix/www/bitrix/modules/main/lib/httpapplication.php:39
+#8: Bitrix\Main\HttpApplication->initializeContext
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:130
+#9: Bitrix\Main\Application->initializeExtendedKernel
+	/home/bitrix/www/bitrix/modules/main/include.php:1
+#10: require_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/prolog_before.php:19
+#11: require(string)
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:11
+----------
+
+OTUS 2026-02-06 22:04:11 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `NAME` (NAME) for \Bitrix\Catalog\Product Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3509
+#1: Bitrix\Main\ORM\Query\Query->getRegisteredChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1231
+#2: Bitrix\Main\ORM\Query\Query->addToSelectChain
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2476
+#3: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:942
+#4: Bitrix\Main\ORM\Query\Query->exec
+	/home/bitrix/www/bitrix/modules/main/lib/orm/data/datamanager.php:503
+#5: Bitrix\Main\ORM\Data\DataManager::getList
+	/home/bitrix/www/catalog_update.php:136
+----------
+
+OTUS 2026-02-06 22:15:40 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined method Bitrix\Crm\ProductRow::create() (0)
+/home/bitrix/www/catalog_update.php:120
+----------
+
+OTUS 2026-02-06 22:19:49 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+Bitrix\Crm\Item::normalizeProduct(): Argument #1 ($product) must be of type Bitrix\Crm\ProductRow, array given, called in /home/bitrix/www/bitrix/modules/crm/lib/item.php on line 1330 (0)
+/home/bitrix/www/bitrix/modules/crm/lib/item.php:1368
+#0: Bitrix\Crm\Item->normalizeProduct
+	/home/bitrix/www/bitrix/modules/crm/lib/item.php:1330
+#1: Bitrix\Crm\Item->setProductRows
+	/home/bitrix/www/bitrix/modules/crm/lib/item.php:570
+#2: Bitrix\Crm\Item->set
+	/home/bitrix/www/catalog_update.php:116
+----------
+
+OTUS 2026-02-06 22:52:02 - Host:  - UNKNOWN - [Bitrix\Main\SystemException] 
+Error in agent Event);. (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:516
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+Previous exception: [ParseError] 
+Unmatched ')' (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php(508) : eval()'d code:1
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+
+OTUS 2026-02-06 22:55:21 - Host: 192.168.1.185:80 - UNKNOWN - [Bitrix\Main\SystemException] 
+Error in agent Event);. (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:516
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/include/epilog_after.php:61
+#7: require(string)
+	/home/bitrix/www/bitrix/components/bitrix/ui.sidepanel.wrapper/class.php:193
+#8: UIPageSliderWrapperComponent->executeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:675
+#9: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#10: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/crm/lib/Service/Router/Component/Component.php:59
+#11: Bitrix\Crm\Service\Router\Component\Component->render
+	/home/bitrix/www/bitrix/modules/crm/lib/Service/Router/AbstractPage.php:58
+#12: Bitrix\Crm\Service\Router\AbstractPage->render
+	/home/bitrix/www/bitrix/components/bitrix/crm.router/templates/.default/template.php:47
+#13: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:842
+#14: CBitrixComponentTemplate->__IncludePHPTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:951
+#15: CBitrixComponentTemplate->IncludeTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:791
+#16: CBitrixComponent->showComponentTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:731
+#17: CBitrixComponent->includeComponentTemplate
+	/home/bitrix/www/bitrix/components/bitrix/crm.router/class.php:48
+#18: CrmRouterComponent->executeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:675
+#19: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#20: CAllMain->IncludeComponent
+	/home/bitrix/www/crm/type/index.php:7
+#21: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#22: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+Previous exception: [ParseError] 
+Unmatched ')' (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php(508) : eval()'d code:1
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/include/epilog_after.php:61
+#7: require(string)
+	/home/bitrix/www/bitrix/components/bitrix/ui.sidepanel.wrapper/class.php:193
+#8: UIPageSliderWrapperComponent->executeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:675
+#9: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#10: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/modules/crm/lib/Service/Router/Component/Component.php:59
+#11: Bitrix\Crm\Service\Router\Component\Component->render
+	/home/bitrix/www/bitrix/modules/crm/lib/Service/Router/AbstractPage.php:58
+#12: Bitrix\Crm\Service\Router\AbstractPage->render
+	/home/bitrix/www/bitrix/components/bitrix/crm.router/templates/.default/template.php:47
+#13: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:842
+#14: CBitrixComponentTemplate->__IncludePHPTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:951
+#15: CBitrixComponentTemplate->IncludeTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:791
+#16: CBitrixComponent->showComponentTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:731
+#17: CBitrixComponent->includeComponentTemplate
+	/home/bitrix/www/bitrix/components/bitrix/crm.router/class.php:48
+#18: CrmRouterComponent->executeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:675
+#19: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#20: CAllMain->IncludeComponent
+	/home/bitrix/www/crm/type/index.php:7
+#21: include_once(string)
+	/home/bitrix/www/bitrix/modules/main/include/urlrewrite.php:128
+#22: include_once(string)
+	/home/bitrix/www/bitrix/urlrewrite.php:2
+----------
+
+OTUS 2026-02-06 23:00:01 - Host:  - UNKNOWN - [Bitrix\Main\SystemException] 
+Error in agent Array
+(
+)
+. (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:516
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+Previous exception: [ParseError] 
+syntax error, unexpected end of file (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php(508) : eval()'d code:4
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+
+OTUS 2026-02-06 23:24:03 - Host:  - UNKNOWN - [Bitrix\Main\SystemException] 
+Error in agent \Otus\Crm\Market\Agents::cleanOldLeads();. (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:516
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+Previous exception: [ParseError] 
+syntax error, unexpected token "(" (0)
+/home/bitrix/www/local/php_interface/src/Crm/Market/Agents.php:274
+#0: Composer\Autoload\{closure}
+	/home/bitrix/www/vendor/composer/ClassLoader.php:427
+#1: Composer\Autoload\ClassLoader->loadClass
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php(508) : eval()'d code:1
+#2: eval
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:508
+#3: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#4: CAllAgent::CheckAgents
+	
+#5: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#6: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#7: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#8: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#9: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+
+OTUS 2026-02-06 23:27:03 - Host:  - UNKNOWN - [Bitrix\Main\SystemException] 
+Error in agent \Otus\Crm\Market\Agents::cleanOldLeads();. (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:516
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+Previous exception: [Error] 
+Using $this when not in object context (0)
+/home/bitrix/www/local/php_interface/src/Crm/Market/Agents.php:48
+#0: Otus\Crm\Market\Agents::cleanOldLeads
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php(508) : eval()'d code:1
+#1: eval
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:508
+#2: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#3: CAllAgent::CheckAgents
+	
+#4: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#5: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#6: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#7: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#8: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+
+OTUS 2026-02-06 23:30:02 - Host:  - UNKNOWN - [Bitrix\Main\SystemException] 
+Error in agent \Otus\Crm\Market\Agents::cleanOldLeads();. (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:516
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+Previous exception: [Error] 
+Using $this when not in object context (0)
+/home/bitrix/www/local/php_interface/src/Crm/Market/Agents.php:48
+#0: Otus\Crm\Market\Agents::cleanOldLeads
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php(508) : eval()'d code:1
+#1: eval
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:508
+#2: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#3: CAllAgent::CheckAgents
+	
+#4: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#5: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#6: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#7: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#8: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+
+OTUS 2026-02-06 23:35:04 - Host:  - UNKNOWN - [Bitrix\Main\SystemException] 
+Error in agent Test;. (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:516
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+Previous exception: [Error] 
+Undefined constant "Test" (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php(508) : eval()'d code:1
+#0: eval
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:508
+#1: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#2: CAllAgent::CheckAgents
+	
+#3: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#4: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#5: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#6: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#7: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+
+OTUS 2026-02-06 23:39:03 - Host:  - UNKNOWN - [Bitrix\Main\SystemException] 
+Error in agent Test2;. (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:516
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+Previous exception: [Error] 
+Undefined constant "Test2" (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php(508) : eval()'d code:1
+#0: eval
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:508
+#1: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#2: CAllAgent::CheckAgents
+	
+#3: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#4: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#5: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#6: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#7: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+
+OTUS 2026-02-06 23:43:02 - Host:  - UNKNOWN - [Bitrix\Main\SystemException] 
+Error in agent Test2 8
+ ;. (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:516
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+Previous exception: [ParseError] 
+syntax error, unexpected integer "8" (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php(508) : eval()'d code:1
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+
+OTUS 2026-02-07 13:59:05 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Crmcustomtabgarage\Orm\CarTable" not found (0)
+/home/bitrix/www/catalog_update.php:199
+----------
+
+OTUS 2026-02-07 14:05:50 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Orm\CarTable" not found (0)
+/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php(135) : eval()'d code:13
+#0: eval
+	/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php:135
+#1: require_once(string)
+	/home/bitrix/www/bitrix/admin/php_command_line.php:2
+----------
+
+OTUS 2026-02-07 14:06:58 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "Otus\Orm\CarTable" not found (0)
+/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php(135) : eval()'d code:13
+#0: eval
+	/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php:135
+#1: require_once(string)
+	/home/bitrix/www/bitrix/admin/php_command_line.php:2
+----------
+
+OTUS 2026-02-07 14:08:47 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\ObjectException] 
+Incorrect date: 2000 (500)
+/home/bitrix/www/bitrix/modules/main/lib/type/date.php:33
+#0: Bitrix\Main\Type\Date->__construct
+	/home/bitrix/www/bitrix/modules/perfmon/admin/perfmon_row_edit.php:551
+#1: require(string)
+	/home/bitrix/www/bitrix/admin/perfmon_row_edit.php:2
+----------
+
+OTUS 2026-02-07 14:26:15 - Host: 192.168.1.185:80 - UNKNOWN - [Error] 
+Call to undefined method TestGrid::formatClientName() (0)
+/home/bitrix/www/bitrix/components/otus.crmcustomtabgarage/test.grid/class.php:371
+#0: TestGrid->getCarinfoAction
+	
+#1: ReflectionMethod->invokeArgs
+	/home/bitrix/www/bitrix/modules/main/lib/engine/autowire/binder.php:211
+#2: Bitrix\Main\Engine\AutoWire\Binder->invoke
+	/home/bitrix/www/bitrix/modules/main/lib/engine/action.php:117
+#3: Bitrix\Main\Engine\Action->runWithSourceParametersList
+	/home/bitrix/www/bitrix/modules/main/lib/engine/component/inlineaction.php:60
+#4: Bitrix\Main\Engine\Component\InlineAction->runWithSourceParametersList
+	/home/bitrix/www/bitrix/modules/main/lib/engine/controller.php:467
+#5: Bitrix\Main\Engine\Controller->getActionResponse
+	/home/bitrix/www/bitrix/modules/main/lib/engine/controller.php:432
+#6: Bitrix\Main\Engine\Controller->run
+	/home/bitrix/www/bitrix/modules/main/lib/httpapplication.php:141
+#7: Bitrix\Main\HttpApplication->runController
+	/home/bitrix/www/bitrix/modules/main/lib/httpapplication.php:108
+#8: Bitrix\Main\HttpApplication->run
+	/home/bitrix/www/bitrix/modules/main/services/ajax.php:35
+#9: require(string)
+	/home/bitrix/www/bitrix/services/main/ajax.php:1
+----------
+
+OTUS 2026-02-07 17:35:52 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+count(): Argument #1 ($value) must be of type Countable|array, bool given (0)
+/home/bitrix/www/bitrix/modules/crm/classes/general/crm_deal.php:1203
+#0: CAllCrmDeal::GetList
+	/home/bitrix/www/catalog_update.php:196
+----------
+
+OTUS 2026-02-07 17:39:05 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+count(): Argument #1 ($value) must be of type Countable|array, bool given (0)
+/home/bitrix/www/bitrix/modules/crm/classes/general/crm_deal.php:1203
+#0: CAllCrmDeal::GetList
+	/home/bitrix/www/catalog_update.php:196
+----------
+
+OTUS 2026-02-07 17:39:31 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [TypeError] 
+count(): Argument #1 ($value) must be of type Countable|array, bool given (0)
+/home/bitrix/www/bitrix/modules/crm/classes/general/crm_deal.php:1203
+#0: CAllCrmDeal::GetList
+	/home/bitrix/www/catalog_update.php:196
+----------
+
+OTUS 2026-02-07 18:28:41 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined method CCrmDeal::GetCategoryList() (0)
+/home/bitrix/www/catalog_update.php:274
+----------
+
+OTUS 2026-02-07 18:29:32 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined method CCrmDeal::GetCategoryList() (0)
+/home/bitrix/www/catalog_update.php:274
+----------
+
+OTUS 2026-02-07 18:31:32 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined method CCrmDeal::GetCategoryList() (0)
+/home/bitrix/www/catalog_update.php:274
+----------
+
+OTUS 2026-02-07 18:33:35 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Call to undefined method CCrmDeal::GetCategoryList() (0)
+/home/bitrix/www/catalog_update.php:274
+----------
+
+OTUS 2026-02-07 20:33:48 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [ParseError] 
+syntax error, unexpected token "{" (0)
+/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php(135) : eval()'d code:4
+#0: require_once
+	/home/bitrix/www/bitrix/admin/php_command_line.php:2
+----------
+
+OTUS 2026-02-07 20:34:01 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Error] 
+Class "CCrmDeal" not found (0)
+/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php(135) : eval()'d code:1
+#0: eval
+	/home/bitrix/www/bitrix/modules/main/admin/php_command_line.php:135
+#1: require_once(string)
+	/home/bitrix/www/bitrix/admin/php_command_line.php:2
+----------
+
+OTUS 2026-02-08 12:05:18 - Host: 192.168.1.185:80 - UNCAUGHT_EXCEPTION - [Bitrix\Main\SystemException] 
+Unknown field definition `NUMBER` (NUMBER) for \Otus\Crmcustomtabgarage\Orm\Car Entity. (100)
+/home/bitrix/www/bitrix/modules/main/lib/orm/query/chain.php:346
+#0: Bitrix\Main\ORM\Query\Chain::getChainByDefinition
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:1381
+#1: Bitrix\Main\ORM\Query\Query->setFilterChains
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:2479
+#2: Bitrix\Main\ORM\Query\Query->buildQuery
+	/home/bitrix/www/bitrix/modules/main/lib/orm/query/query.php:3638
+#3: Bitrix\Main\ORM\Query\Query->queryCountTotal
+	/home/bitrix/www/bitrix/components/otus.crmcustomtabgarage/test.grid/class.php:203
+#4: TestGrid->prepareGridData
+	/home/bitrix/www/bitrix/components/otus.crmcustomtabgarage/test.grid/class.php:134
+#5: TestGrid->executeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:675
+#6: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#7: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/bitrix/ui.sidepanel.wrapper/templates/.default/content.php:25
+#8: include(string)
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:842
+#9: CBitrixComponentTemplate->__IncludePHPTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component_template.php:951
+#10: CBitrixComponentTemplate->IncludeTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:791
+#11: CBitrixComponent->showComponentTemplate
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:731
+#12: CBitrixComponent->includeComponentTemplate
+	/home/bitrix/www/bitrix/components/bitrix/ui.sidepanel.wrapper/class.php:199
+#13: UIPageSliderWrapperComponent->executeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/component.php:675
+#14: CBitrixComponent->includeComponent
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:1188
+#15: CAllMain->IncludeComponent
+	/home/bitrix/www/bitrix/components/otus.crmcustomtabgarage/test.grid/lazyload.ajax.php:56
+----------
+
+OTUS 2026-02-08 13:02:01 - Host:  - UNKNOWN - [Bitrix\Main\SystemException] 
+Error in agent \Otus\Crm\Market\Agents::cleanOldLeads();. (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:516
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+Previous exception: [Error] 
+Call to undefined method Otus\Crm\Market\Agents::cleanOldLeads() (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php(508) : eval()'d code:1
+#0: eval
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:508
+#1: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#2: CAllAgent::CheckAgents
+	
+#3: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#4: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#5: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#6: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#7: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+

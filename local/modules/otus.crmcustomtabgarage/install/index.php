@@ -34,7 +34,7 @@ class otus_crmcustomtabgarage extends CModule
         $this->MODULE_VERSION_DATE = $arModuleVersion['VERSION_DATE'];       
         $this->MODULE_DESCRIPTION = 'Гараж клиента';
         $this->MODULE_NAME = 'Гараж клиента';
-        $this->PARTNER_NAME = 'LTT OTUS PRODUCTION';
+        $this->PARTNER_NAME = 'LTD OTUS PRODUCTION';
         $this->PARTNER_URI = 'https://otus.ru/';
     }
 

@@ -45,7 +45,14 @@ class CarTable extends DataManager
 
             (new StringField('COLOR')),
 
-            (new IntegerField('CLIENT_ID'))
+            (new IntegerField('CLIENT_ID')),
+            
+            (new Reference(
+                'CLIENT',
+                \Bitrix\Crm\ContactTable::class,
+                Join::on('this.CLIENT_ID', 'ref.ID')
+            ))
+                ->configureJoinType('left'),
 
             // (new IntegerField('GARAGE_ID')),
 

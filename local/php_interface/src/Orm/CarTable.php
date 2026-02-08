@@ -1,5 +1,5 @@
 <?php
-namespace Otus\Orm;
+namespace Otus\Orm;;
 
 use Bitrix\Main\ORM\Data\DataManager;
 use Bitrix\Main\ORM\Fields\IntegerField;
@@ -45,14 +45,23 @@ class CarTable extends DataManager
 
             (new StringField('COLOR')),
 
-            (new IntegerField('GARAGE_ID')),
-
+            (new IntegerField('CLIENT_ID')),
+            
             (new Reference(
-                'GARAGE',
-                GarageTable::class,
-                Join::on('this.GARAGE_ID', 'ref.ID')
+                'CLIENT',
+                \Bitrix\Crm\ContactTable::class,
+                Join::on('this.CLIENT_ID', 'ref.ID')
             ))
-                ->configureJoinType('inner'),
+                ->configureJoinType('left'),
+
+            // (new IntegerField('GARAGE_ID')),
+
+            // (new Reference(
+            //     'GARAGE',
+            //     GarageTable::class,
+            //     Join::on('this.GARAGE_ID', 'ref.ID')
+            // ))
+            //     ->configureJoinType('inner'),
         ];
     }
 }

@@ -22,7 +22,7 @@ BX.Otus.TestGrid = {
                 bookId: id,
             },
         }).then(response => {
-            BX.Otus.TestGrid.showMessage('Удалена книга с ID=' + id);
+            // BX.Otus.TestGrid.showMessage('Удалена книга с ID=' + id);
             let grid = BX.Main.gridManager.getById('BOOK_GRID2')?.instance;
             grid.reload();
         }, reject => {
@@ -34,89 +34,7 @@ BX.Otus.TestGrid = {
             BX.Otus.TestGrid.showMessage(errorMessage);
         });
     },
-    deleteBookViaAjax(id) {
-        BX.ajax.runComponentAction('otus:book.grid', 'deleteElement', {
-            mode: 'ajax',
-            data: {
-                bookId: id,
-            },
-        }).then(response => {
-            BX.Otus.TestGrid.showMessage('Удалена книга с ID=' + id);
-            let grid = BX.Main.gridManager.getById('BOOK_GRID2')?.instance;
-            grid.reload();
-        }, reject => {
-            let errorMessage = '';
-            for (let error of reject.errors) {
-                errorMessage += error.message + '\n';
-            }
-
-            BX.Otus.TestGrid.showMessage(errorMessage);
-        });
-    },
-    addTestBookElement: function () {
-        BX.ajax.runComponentAction('otus:book.grid', 'addTestBookElement', {
-            mode: 'class',
-            signedParameters: BX.Otus.TestGrid.signedParams,
-            data: {
-                bookData: {
-                    bookTitle: "Тестовая книга",
-                    authors: [
-                        1, // идентификатор автора в таблица aholin_author
-                        2,
-                    ],
-                    publishYear: 2025,
-                    pageCount: 55,
-                    publishDate: '24.07.2025',
-                },
-            },
-        }).then(response => {
-            BX.Otus.TestGrid.showMessage('Создана книга с ID=' + response.data.BOOK_ID);
-            let grid = BX.Main.gridManager.getById('BOOK_GRID')?.instance;
-            grid.reload();
-        }, reject => {
-            let errorMessage = '';
-            for (let error of reject.errors) {
-                errorMessage += error.message + '\n';
-            }
-
-            BX.Otus.TestGrid.showMessage(errorMessage);
-        });
-    },
-    createAlternativeTestBookElement: function () {
-        BX.ajax.runComponentAction('otus:book.grid', 'createTestElement', {
-            mode: 'ajax',
-            signedParameters: BX.Otus.TestGrid.signedParams,
-            data: null,
-        }).then(response => {
-            BX.Otus.TestGrid.showMessage('Создана книга с ID=' + response.data.BOOK_ID);
-            let grid = BX.Main.gridManager.getById('BOOK_GRID')?.instance;
-            grid.reload();
-        }, reject => {
-            let errorMessage = '';
-            for (let error of reject.errors) {
-                errorMessage += error.message + '\n';
-            }
-
-            BX.Otus.TestGrid.showMessage(errorMessage);
-        });
-    },
-    createTestElementViaModule: function () {
-        BX.ajax.runAction(
-            'aholin:crmcustomtab.book.BookController.createTestElement',
-            {}
-        ).then(response => {
-            BX.Otus.TestGrid.showMessage('Создана книга с ID=' + response.data.BOOK_ID);
-            let grid = BX.Main.gridManager.getById('BOOK_GRID')?.instance;
-            grid.reload();
-        }, reject => {
-            let errorMessage = '';
-            for (let error of reject.errors) {
-                errorMessage += error.message + '\n';
-            }
-
-            BX.Otus.TestGrid.showMessage(errorMessage);
-        });
-    },
+   
 
     addCar: function () {
         BX.Otus.TestGrid.showForm();
@@ -226,6 +144,75 @@ BX.Otus.TestGrid = {
         popup.show();
     },
 
+    showCarDeal: function (id) {
+            
+        
+
+        BX.ajax.runComponentAction('otus.crmcustomtabgarage:test.grid', 'getCarinfo', {
+            mode: 'class',
+            signedParameters: BX.Otus.TestGrid.signedParams,
+            data: {
+                bookId: id,
+            },
+            
+        }).then(response => {
+            console.log(response)
+             BX.Otus.TestGrid.showCraInfoWindow(response)
+            // let carInfo = response.data;
+            // BX.Otus.TestGrid.showMessage('Вернуло данные=' + carInfo.car.brand);   
+             if (response.status.success) {
+                console.log('response.data.success')
+                let carInfo = response.data;
+                
+            }         
+            
+        }, reject => {
+            let errorMessage = '';
+            for (let error of reject.errors) {
+                errorMessage += error.message + '\n';
+            }
+
+            BX.Otus.TestGrid.showMessage(errorMessage);
+        });
+
+       
+        
+
+        
+        
+    },
+
+    showCraInfoWindow: function(info) {
+        let oldPopup = BX.PopupWindowManager.getPopupById('car-deal-info');
+            if (oldPopup) {
+                oldPopup.destroy();
+            }   
+
+            let popup = BX.PopupWindowManager.create('car-deal-info', null, {
+            content:`
+                   
+                    <div style="padding: 20px; min-width: 400px;">
+                        <h2>Информация о сделках по автомобилю ${info.data.car.brand} ${info.data.car.model} ${info.data.car.car_number} (Владелец: ${info.data.client.full_name})</h2>
+                        ${BX.Otus.TestGrid.createCarDealTable(info.data.deals)}
+                    </div>
+                
+            `,
+                    darkMode: false,
+                    buttons: [                
+                        new BX.PopupWindowButton({
+                            text: "Закрыть" ,
+                            className: "book-form-button-link-cancel" ,
+                            events: {
+                                click: function(){
+                                    this.popupWindow.close();
+                                }
+                            }
+                        })
+                    ]
+                });
+                popup.show();
+    },
+
     createBook: function (form) {
         let data = new FormData(form);
         console.log(data)
@@ -234,7 +221,7 @@ BX.Otus.TestGrid = {
             data: data,
         }).then(response => {
             let id = response.data.BOOK_ID;
-            BX.Otus.TestGrid.showMessage('Добавлена книга с ID=' + id);
+            // BX.Otus.TestGrid.showMessage('Добавлена книга с ID=' + id);
             let grid = BX.Main.gridManager.getById('BOOK_GRID2')?.instance;
             grid.reload();
         }, reject => {
@@ -246,4 +233,36 @@ BX.Otus.TestGrid = {
             BX.Otus.TestGrid.showMessage(errorMessage);
         });
     },
+
+    createCarDealTable: function(dealInfo) {
+        let rows = '';
+        const stageTitle = {'C1:NEW': 'Приемка','C1:PREPARATION': 'Диагностика','C1:PREPAYMENT_INVOICE': 'Ожидание запчастей','C1:EXECUTING': 'Ремонт','C1:FINAL_INVOICE': 'Проверка','C1:UC_DW6II2': 'Завершена'}
+        dealInfo.forEach((deal, index) => {
+            rows += `<tr>
+                <td>${index + 1}</td>
+                <td><strong>${deal.TITLE}</strong><br>
+                    <small>ID: ${deal.ID} | Ответственный: <a href="${deal.ASSIGNED_BY.PROFILE_LINK}">${deal.ASSIGNED_BY.FULL_NAME}</a></small>
+                </td>
+                <td>${deal.DATE_CREATE}</td>
+                <td>${stageTitle[deal.STAGE_ID]}</td>
+                <td align="right"><strong>${parseFloat(deal.OPPORTUNITY).toLocaleString('ru-RU')}</strong></td>
+                <td>${deal.PRODUCTS.map((p, i) => `${i + 1}. ${p}`).join('<br>')}</td>
+            </tr>`;
+        });  
+        let html = `<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse;">
+                <thead>
+                    <tr style="background: #f2f2f2;">
+                        <th>№</th>
+                        <th>Название сделки</th>
+                        <th>Дата создания</th>
+                        <th>Стадия</th>
+                        <th>Сумма, руб.</th>
+                        <th>Товары </th>
+                    </tr>
+                </thead>
+                <tbody id="deals-body">${rows}</tbody>
+            </table>`;
+        
+        return html;
+    }
 }

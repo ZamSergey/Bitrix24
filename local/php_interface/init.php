@@ -263,11 +263,11 @@ function iblockUpdateHandler ($arFields) {
 // API ключ: f0ad26ce162a41c4907caafa144e1c3dd598f148
 // скеретный ключ: 0877bb4ccbdf964997920ab4818e40889b91fb81
 
-EventManager::getInstance()->addEventHandler(
-    'main',
-    'OnProlog',
-    [CustomEvents::class, 'OnProlog']
-);
+// EventManager::getInstance()->addEventHandler(
+//     'main',
+//     'OnProlog',
+//     [CustomEvents::class, 'OnProlog']
+// );
 
 // EventManager::getInstance()->AddEventHandler(
 //     "main",

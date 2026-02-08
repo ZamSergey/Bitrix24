@@ -14,7 +14,7 @@ use Bitrix\Main\Error;
 use Bitrix\Main\Type\DateTime;
 use Bitrix\Main\Errorable;
 use Bitrix\Main\ErrorableImplementation;
-
+Loader::includeModule('crm');
 Loader::includeModule('otus.crmcustomtabgarage');
 class TestGrid extends \CBitrixComponent implements Controllerable
 {
@@ -51,39 +51,33 @@ class TestGrid extends \CBitrixComponent implements Controllerable
                 'text' => 'Добавить автомобиль',
                 'color' => Color::PRIMARY_DARK,
             ],
-            [
-                'click' => 'BX.Otus.TestGrid.createTestElementViaModule',
-                'text' => 'Добавить тестовый автомобиль',
-                'color' => Color::DANGER_DARK,
-            ]
         ];
     }
 
     private function getElementActions(array $fields): array
     {
         return [
+            
             [
-                'onclick' => "window.open('http://192.168.1.185/bitrix/admin/perfmon_row_edit.php?lang=ru&table_name=car2&pk%5BID%5D={$fields['ID']}')", // метод обработчик в js
-                'text' => Loc::getMessage('BOOK_GRID_OPEN_BOOK', [
+                'onclick' => sprintf('BX.Otus.TestGrid.showCarDeal(%d)', $fields['ID']), // метод обработчик в js
+                'text' => Loc::getMessage('CAR_GRID_SHOW_CAR_INFO', [
                     '#BOOK_NAME#' => $fields['TITLE'],
                 ]),
                 'default' => true,
             ],
             [
                 'onclick' => sprintf('BX.Otus.TestGrid.deleteCar(%d)', $fields['ID']),
-                'text' => Loc::getMessage('BOOK_GRID_DELETE'),
+                'text' => Loc::getMessage('CAR_GRID_DELETE'),
                 'default' => true,
             ],
             [
-                'onclick' => sprintf('BX.Otus.TestGrid.deleteCarViaAjax(%d)', $fields['ID']),
-                'text' => Loc::getMessage('BOOK_GRID_DELETE') . ' через AJAX',
+                'onclick' => "window.open('http://192.168.1.185/bitrix/admin/perfmon_row_edit.php?lang=ru&table_name=car2&pk%5BID%5D={$fields['ID']}')", // метод обработчик в js
+                'text' => Loc::getMessage('CAR_GRID_OPEN_CAR', [
+                    '#BOOK_NAME#' => $fields['TITLE'],
+                ]),
                 'default' => true,
             ],
-            [
-                'onclick' => sprintf('BX.Otus.TestGrid.showMessage("TEST")'),
-                'text' => 'Вывести сообщение',
-                'default' => true,
-            ],
+          
         ];
     }
 
@@ -123,6 +117,12 @@ class TestGrid extends \CBitrixComponent implements Controllerable
                 'id' => 'COLOR',
                 'name' => Loc::getMessage('CAR_GRID_CAR_COLOR_LABEL'),
                 'sort' => 'COLOR',
+                'default' => true,
+            ],
+            [
+                'id' => 'MILEAGE',
+                'name' => Loc::getMessage('CAR_GRID_CAR_MILEAGE_LABEL'),
+                'sort' => 'MILEAGE',
                 'default' => true,
             ],
         ];
@@ -215,7 +215,8 @@ class TestGrid extends \CBitrixComponent implements Controllerable
                     'MODEL',
                     'CAR_NUMBER',
                     'CAR_YEAR',
-                    'COLOR' 
+                    'COLOR',
+                    'MILEAGE'
                 ],
                 'order' => $sort['sort'],
             ]);
@@ -239,8 +240,8 @@ class TestGrid extends \CBitrixComponent implements Controllerable
             $filter['%MODEL'] = $filterData['MODEL'];
         }
 
-        if (!empty($filterData['NUMBER'])) {
-            $filter['%NUMBER'] = $filterData['NUMBER'];
+        if (!empty($filterData['CAR_NUMBER'])) {
+            $filter['%CAR_NUMBER'] = $filterData['CAR_NUMBER'];
         }
 
         if (!empty($filterData['BRAND'])) {
@@ -266,6 +267,7 @@ class TestGrid extends \CBitrixComponent implements Controllerable
                     'CAR_NUMBER' => $book['CAR_NUMBER'],
                     'CAR_YEAR' => $book['CAR_YEAR'],
                     'COLOR' => $book['COLOR'],
+                    'MILEAGE' => $book['MILEAGE'],
                 ];
             }            
         }
@@ -279,6 +281,7 @@ class TestGrid extends \CBitrixComponent implements Controllerable
                     'CAR_NUMBER' => $book['CAR_NUMBER'],
                     'CAR_YEAR' => $book['CAR_YEAR'],
                     'COLOR' => $book['COLOR'],
+                    'MILEAGE' => $book['MILEAGE'],
                 ],
                 'actions' => $this->getElementActions($book),
             ];
@@ -297,7 +300,7 @@ class TestGrid extends \CBitrixComponent implements Controllerable
                 'default' => true,
             ],
             [
-                'id' => 'NUMBER',
+                'id' => 'CAR_NUMBER',
                 'name' => Loc::getMessage('CAR_GRID_CAR_NUMBER_LABEL'),
                 'type' => 'string',
                 'default' => true,
@@ -322,5 +325,229 @@ class TestGrid extends \CBitrixComponent implements Controllerable
         }
 
         return [];
+    }
+
+    public function getCarinfoAction(int $bookId): array
+    {
+        $this->errorCollection = new ErrorCollection();
+        try {
+            $query = CarTable::query()
+                ->setSelect([
+                    'ID',
+                    'BRAND',
+                    'MODEL',
+                    'CAR_NUMBER',                    
+                    'COLOR',
+                    'MILEAGE',
+                    'CLIENT_ID',
+                    'CLIENT_NAME' => 'CLIENT.NAME',
+                    'CLIENT_LAST_NAME' => 'CLIENT.LAST_NAME',                    
+                ])
+                ->setFilter(['=ID' => $bookId]);
+            
+           
+            
+            $car = $query->exec()->fetch();
+            
+            if (!$car) {
+                return "not";
+                throw new \Exception("Автомобиль с ID $bookId не найден");
+            }
+            
+            // Формируем результат           
+            
+            $result = [
+                
+              
+                    'car' => [
+                        'id' => $car['ID'],
+                        'brand' => $car['BRAND'],
+                        'model' => $car['MODEL'],
+                        'car_number' => $car['CAR_NUMBER'],                       
+                        'color' => $car['COLOR'],
+                        'mileage' => $car['MILEAGE'],
+                        'client_id' => $car['CLIENT_ID'],
+                    ],
+                    'client' => [
+                        'id' => $car['CLIENT_ID'],
+                        'name' => $car['CLIENT_NAME'],
+                        'email' => $car['CLIENT_EMAIL'] ?? '',
+                        'phone' => $car['CLIENT_PHONE'] ?? '',
+                        'full_name' => $car['CLIENT_NAME'] . ' ' . $car['CLIENT_LAST_NAME'] ,
+                    ]
+                
+            ];
+
+             $deals = CCrmDeal::GetListEx(
+                ['DATE_CREATE' => 'DESC'], // Сортировка
+                [
+                    'UF_CAR_ID' => 1,       // Фильтр по пользовательскому полю
+                    'CHECK_PERMISSIONS' => 'N' // Игнорировать права доступа
+                ],
+                false, // Группировка
+                false, // Навигация
+                [
+                    'ID',
+                    'TITLE',
+                    'DATE_CREATE',
+                    'STAGE_ID',
+                    'ASSIGNED_BY_ID',
+                    'OPPORTUNITY',
+                    'UF_CAR_ID'
+                ]
+            );
+
+            $resultDeals = [];
+
+            while ($deal = $deals->Fetch()) {
+                $dealId = $deal['ID'];
+                
+                // Получаем прикрепленные товары
+                $productRows = CCrmProductRow::LoadRows('D', $dealId); // 'D' - тип сделка
+                $products = [];
+                
+                foreach ($productRows as $productRow) {
+                    if (!empty($productRow['PRODUCT_NAME']) && !empty($productRow['QUANTITY'])) {
+                        $products[] = $productRow['PRODUCT_NAME'] . ' '. $productRow['QUANTITY'];
+                    }
+                    
+                }
+                
+                // Получаем информацию об ответственном
+                $assignedBy = null;
+                if ($deal['ASSIGNED_BY_ID'] > 0) {
+                    $user = CUser::GetByID($deal['ASSIGNED_BY_ID'])->Fetch();
+                    if ($user) {
+                        $assignedBy = [
+                            'ID' => $user['ID'],
+                            'FULL_NAME' => trim($user['LAST_NAME'] . ' ' . $user['NAME'] . ' ' . $user['SECOND_NAME']),
+                            'PROFILE_LINK' => CComponentEngine::MakePathFromTemplate(
+                                '/company/personal/user/#user_id#/',
+                                ['user_id' => $user['ID']]
+                            )
+                        ];
+                    }
+                }
+                
+                // Получаем название стадии
+                $stageName = '';
+                $stageList = CCrmStatus::GetStatusList('DEAL_STAGE');
+                if (isset($stageList[$deal['STAGE_ID']])) {
+                    $stageName = $stageList[$deal['STAGE_ID']];
+                }
+                
+                // Формируем результат
+                $resultDeals[] = [
+                    'ID' => $dealId,
+                    'TITLE' => $deal['TITLE'],
+                    'DATE_CREATE' => $deal['DATE_CREATE'],
+                    'STAGE_ID' => $deal['STAGE_ID'],
+                    'STAGE_NAME' => $stageName,
+                    'ASSIGNED_BY' => $assignedBy,
+                    'OPPORTUNITY' => $deal['OPPORTUNITY'],
+                    'PRODUCTS' => $products
+                ];
+            }
+
+            $ressult['dealinfo'] = $resultDeals;
+            
+        } catch (\Exception $e) {
+            $this->errorCollection->add([new Error($e->getMessage())]);
+            $result = [
+                'success' => false,
+                'error' => $e->getMessage(),
+            ];
+        }
+        $result['deals'] = self::getCardealinfoAction($bookId);
+
+        return $result;
+    }
+
+    public function getCardealinfoAction (int $carId): array
+    {
+        $this->errorCollection = new ErrorCollection();
+
+        try {
+            $deals = CCrmDeal::GetListEx(
+                ['DATE_CREATE' => 'DESC'], // Сортировка
+                [
+                    'UF_CAR_ID' => $carId,       // Фильтр по пользовательскому полю
+                    'CHECK_PERMISSIONS' => 'N' // Игнорировать права доступа
+                ],
+                false, // Группировка
+                false, // Навигация
+                [
+                    'ID',
+                    'TITLE',
+                    'DATE_CREATE',
+                    'STAGE_ID',
+                    'ASSIGNED_BY_ID',
+                    'OPPORTUNITY',
+                    'UF_CAR_ID'
+                ]
+            );
+
+            $resultDeals = [];
+
+            while ($deal = $deals->Fetch()) {
+                $dealId = $deal['ID'];
+                
+                // Получаем прикрепленные товары
+                $productRows = CCrmProductRow::LoadRows('D', $dealId); // 'D' - тип сделка
+                $products = [];
+                
+                foreach ($productRows as $productRow) {
+                    if (!empty($productRow['PRODUCT_NAME']) && !empty($productRow['QUANTITY'])) {
+                        $products[] = $productRow['PRODUCT_NAME'] . ' '. $productRow['QUANTITY'];
+                    }
+                    
+                }
+                
+                // Получаем информацию об ответственном
+                $assignedBy = null;
+                if ($deal['ASSIGNED_BY_ID'] > 0) {
+                    $user = CUser::GetByID($deal['ASSIGNED_BY_ID'])->Fetch();
+                    if ($user) {
+                        $assignedBy = [
+                            'ID' => $user['ID'],
+                            'FULL_NAME' => trim($user['LAST_NAME'] . ' ' . $user['NAME'] . ' ' . $user['SECOND_NAME']),
+                            'PROFILE_LINK' => CComponentEngine::MakePathFromTemplate(
+                                '/company/personal/user/#user_id#/',
+                                ['user_id' => $user['ID']]
+                            )
+                        ];
+                    }
+                }
+                
+                // Получаем название стадии
+                $stageName = '';
+                $stageList = CCrmStatus::GetStatusList('DEAL_STAGE');
+                if (isset($stageList[$deal['STAGE_ID']])) {
+                    $stageName = $stageList[$deal['STAGE_ID']];
+                }
+                
+                // Формируем результат
+                $resultDeals[] = [
+                    'ID' => $dealId,
+                    'TITLE' => $deal['TITLE'],
+                    'DATE_CREATE' => $deal['DATE_CREATE'],
+                    'STAGE_ID' => $deal['STAGE_ID'],
+                    'STAGE_NAME' => $stageName,
+                    'ASSIGNED_BY' => $assignedBy,
+                    'OPPORTUNITY' => $deal['OPPORTUNITY'],
+                    'PRODUCTS' => $products
+                ];
+            }
+        }
+        catch (\Exception $e) {
+            $this->errorCollection->add([new Error($e->getMessage())]);
+            $result = [
+                'success' => false,
+                'error' => $e->getMessage(),
+            ];
+        }
+
+        return  $resultDeals;
+
     }
 }
