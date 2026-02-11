@@ -143,6 +143,119 @@ BX.Otus.TestGrid = {
         });
         popup.show();
     },
+    drawFormUpdate: function (carData) {
+        let oldPopup = BX.PopupWindowManager.getPopupById('car-update-form');
+        if (oldPopup) {
+            oldPopup.destroy();
+        }
+
+        let popup = BX.PopupWindowManager.create('car-update-form', null, {
+            content:`
+            <div style="padding: 20px; min-width: 400px;">
+                <form id="car-update-form">
+                    <div style="margin-bottom: 12px;">
+                        <input type="text" 
+                               name="carBrand" 
+                               style="width: 100%; padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px;"
+                               placeholder="Марка *"
+                               value="${carData.data.car.brand}"
+                               >
+                    </div>
+                    
+                    <div style="margin-bottom: 12px;">
+                        <input type="text" 
+                               name="carModel" 
+                               style="width: 100%; padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px;"
+                               placeholder="Модель *"
+                                value="${carData.data.car.model}"
+                               >
+                    </div>
+                    
+                    <div style="margin-bottom: 12px;">
+                        <input type="text" 
+                               name="carColor" 
+                               style="width: 100%; padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px;"
+                               placeholder="Цвет"
+                                value="${carData.data.car.color}"
+                               >
+                    </div>
+                    
+                    <div style="margin-bottom: 12px;">
+                        <input type="text" 
+                               name="carNumber" 
+                               style="width: 100%; padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px;"
+                               placeholder="Гос. номер"
+                                value="${carData.data.car.car_number}"
+                               >
+                    </div>
+                    <div style="margin-bottom: 12px;">
+                        <input type="number" 
+                               name="carMile" 
+                               style="width: 100%; padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px;"
+                               placeholder="Пробег, км"
+                               min="0"
+                               value="${carData.data.car.mileage}"
+                               >
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <input type="number" 
+                               name="carDate" 
+                               style="width: 100%; padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px;"
+                               placeholder="Год выпуска"
+                               value="${carData.data.car.year.substring(0, 4)}"
+                               
+                               
+                               >
+                    </div>
+                    <input type="hidden" name="carId" value="${carData.data.car.id}">
+                    <input type="hidden" name="sessid" value="${BX.bitrix_sessid()}">
+                    <input type="hidden" name="clientId" value="${contactId}">
+                    
+                    
+                    
+                    <input type="submit" value="Применить" style="position: absolute; opacity: 0">
+                </form>
+            </div>
+        `,
+            darkMode: true,
+            buttons: [
+                new BX.PopupWindowButton({
+                    text: "Сохранить" ,
+                    className: "book-form-popup-window-button-accept" ,
+                    events: {
+                        click: function(){
+                            let submit = document.querySelector('#car-update-form input[type="submit"]');
+                            let form = document.getElementById('car-update-form');
+                            form.removeEventListener('submit', BX.Otus.TestGrid.handleFormSubmit);
+                        
+                            // Добавляем новый обработчик
+                            BX.Otus.TestGrid.handleFormSubmit = function(event) {
+                                event.preventDefault();
+                                BX.Otus.TestGrid.updateCar(event.target);
+                                this.popupWindow.close();
+                            }.bind(this);
+                            
+                            form.addEventListener('submit', BX.Otus.TestGrid.handleFormSubmit);
+                            submit.click();
+                           
+                            this.popupWindow.close();
+                        }
+                    }
+                }),
+                new BX.PopupWindowButton({
+                    text: "Закрыть" ,
+                    className: "book-form-button-link-cancel" ,
+                    events: {
+                        click: function(){
+                            this.popupWindow.close();
+                        }
+                    }
+                })
+            ]
+        });
+        popup.show();
+    },
 
     showCarDeal: function (id) {
             
@@ -158,6 +271,44 @@ BX.Otus.TestGrid = {
         }).then(response => {
             console.log(response)
              BX.Otus.TestGrid.showCraInfoWindow(response)
+            // let carInfo = response.data;
+            // BX.Otus.TestGrid.showMessage('Вернуло данные=' + carInfo.car.brand);   
+             if (response.status.success) {
+                console.log('response.data.success')
+                let carInfo = response.data;
+                
+            }         
+            
+        }, reject => {
+            let errorMessage = '';
+            for (let error of reject.errors) {
+                errorMessage += error.message + '\n';
+            }
+
+            BX.Otus.TestGrid.showMessage(errorMessage);
+        });
+
+       
+        
+
+        
+        
+    },
+
+    showFormUpdate: function (id) {
+            
+        
+
+        BX.ajax.runComponentAction('otus.crmcustomtabgarage:test.grid', 'getCarinfo', {
+            mode: 'class',
+            signedParameters: BX.Otus.TestGrid.signedParams,
+            data: {
+                bookId: id,
+            },
+            
+        }).then(response => {
+            console.log(response)
+             BX.Otus.TestGrid.drawFormUpdate(response)
             // let carInfo = response.data;
             // BX.Otus.TestGrid.showMessage('Вернуло данные=' + carInfo.car.brand);   
              if (response.status.success) {
@@ -232,6 +383,27 @@ BX.Otus.TestGrid = {
 
             BX.Otus.TestGrid.showMessage(errorMessage);
         });
+    },
+
+    updateCar: function (form) {
+    let data = new FormData(form);
+    console.log(data)
+    BX.ajax.runComponentAction('otus.crmcustomtabgarage:test.grid', 'updateCar', {
+        mode: 'ajax',
+        data: data,
+    }).then(response => {
+        let id = response.data.BOOK_ID;
+        // BX.Otus.TestGrid.showMessage('Добавлена книга с ID=' + id);
+        let grid = BX.Main.gridManager.getById('BOOK_GRID2')?.instance;
+        grid.reload();
+    }, reject => {
+        let errorMessage = '';
+        for (let error of reject.errors) {
+            errorMessage += error.message + '\n';
+        }
+
+        BX.Otus.TestGrid.showMessage(errorMessage);
+    });
     },
 
     createCarDealTable: function(dealInfo) {

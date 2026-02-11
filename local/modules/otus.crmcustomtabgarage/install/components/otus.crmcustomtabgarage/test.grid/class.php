@@ -61,7 +61,7 @@ class TestGrid extends \CBitrixComponent implements Controllerable
             [
                 'onclick' => sprintf('BX.Otus.TestGrid.showCarDeal(%d)', $fields['ID']), // метод обработчик в js
                 'text' => Loc::getMessage('CAR_GRID_SHOW_CAR_INFO', [
-                    '#BOOK_NAME#' => $fields['TITLE'],
+                    
                 ]),
                 'default' => true,
             ],
@@ -73,7 +73,14 @@ class TestGrid extends \CBitrixComponent implements Controllerable
             [
                 'onclick' => "window.open('http://192.168.1.185/bitrix/admin/perfmon_row_edit.php?lang=ru&table_name=car2&pk%5BID%5D={$fields['ID']}')", // метод обработчик в js
                 'text' => Loc::getMessage('CAR_GRID_OPEN_CAR', [
-                    '#BOOK_NAME#' => $fields['TITLE'],
+                    
+                ]),
+                'default' => true,
+            ],
+            [
+                'onclick' => sprintf('BX.Otus.TestGrid.showFormUpdate(%d)', $fields['ID']), // метод обработчик в js
+                'text' => Loc::getMessage('CAR_GRID_UPDATE_CAR', [
+                    
                 ]),
                 'default' => true,
             ],
@@ -337,6 +344,7 @@ class TestGrid extends \CBitrixComponent implements Controllerable
                     'BRAND',
                     'MODEL',
                     'CAR_NUMBER',                    
+                    'CAR_YEAR',                    
                     'COLOR',
                     'MILEAGE',
                     'CLIENT_ID',
@@ -364,6 +372,7 @@ class TestGrid extends \CBitrixComponent implements Controllerable
                         'brand' => $car['BRAND'],
                         'model' => $car['MODEL'],
                         'car_number' => $car['CAR_NUMBER'],                       
+                        'year' => $car['CAR_YEAR'],                       
                         'color' => $car['COLOR'],
                         'mileage' => $car['MILEAGE'],
                         'client_id' => $car['CLIENT_ID'],
@@ -381,7 +390,7 @@ class TestGrid extends \CBitrixComponent implements Controllerable
              $deals = CCrmDeal::GetListEx(
                 ['DATE_CREATE' => 'DESC'], // Сортировка
                 [
-                    'UF_CAR_ID' => 1,       // Фильтр по пользовательскому полю
+                    'UF_CAR_ID' => $bookId,       // Фильтр по пользовательскому полю
                     'CHECK_PERMISSIONS' => 'N' // Игнорировать права доступа
                 ],
                 false, // Группировка

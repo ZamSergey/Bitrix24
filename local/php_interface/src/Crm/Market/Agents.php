@@ -20,7 +20,7 @@ class Agents
      */
     public static function goodsInspection()
     {
-        $modules = ['catalog','iblock','crm'];
+        $modules = ['catalog','iblock','crm','im'];
         foreach ($modules as $module) {
             if (!\Bitrix\Main\Loader::includeModule($module)) {
                
@@ -48,31 +48,49 @@ class Agents
              // Генерируем случайным образом количество товара на складе
             $count = self::getBalance(); 
             // Устанавливаем количество на складе равным 10
-            $quantity = 10;
+            $quantity = $count < 1 ? 10 : $count;
             $quantityReserved = 0; // Можно также сбросить резерв
             // Получаем остатки для каждого товара
             $productInfo = \CCatalogProduct::GetByID($element['ID']);
            
             
             
-            if ($productInfo && $count < 5) {
-                $totalPrice += $element['PURCHASING_PRICE'] * $quantity;
-                $products[] = [
-                    'ID' => $element['ID'],
-                    'NAME' => $element['NAME'],
-                    'QUANTITY' => $quantity,
-                    'QUANTITY_RESERVED' => $quantityReserved,
-                    'PRICE' => $element['PURCHASING_PRICE']
-                ];
+           
+            $totalPrice += $element['PURCHASING_PRICE'] * $quantity;
+            $products[] = [
+                'ID' => $element['ID'],
+                'NAME' => $element['NAME'],
+                'QUANTITY' => $quantity,
+                'QUANTITY_RESERVED' => $quantityReserved,
+                'PRICE' => $element['PURCHASING_PRICE']
+            ];
+            
+            // Обновляем количество товара
+            \CCatalogProduct::Update($element['ID'], [
+                'QUANTITY' => $quantity,
+                'QUANTITY_RESERVED' => $quantityReserved
+            ]);
+
+            if($count < 5) {
+                    // ID получателя
+                $usersId = [5, 6, 7]; // Замените на ID пользователя
+                $uniqueTag = 'PROCUREMENT_ORDER_' . $userId . '_' . time() . '_' . rand(1000, 9999);
+                foreach ($usersId as $userId) {
+                // Отправляем уведомление
+                    $arMessageFields = array(
+                        "TO_USER_ID" => $userId,
+                        "FROM_USER_ID" => 0, // 0 - от системы
+                        "NOTIFY_TYPE" => IM_NOTIFY_SYSTEM,
+                        "NOTIFY_MODULE" => "main",
+                        "NOTIFY_TAG" => $uniqueTag,                            
+                        "NOTIFY_MESSAGE" => "Внимание! Создан заказ на новые запчасти!\n"
+                                            . "Закуплено: " . $element['NAME'] . "\n"
+                                            . "Дата: " . date('d.m.Y H:i:s'),
+                    );
                 
-                // Обновляем количество товара
-                \CCatalogProduct::Update($element['ID'], [
-                    'QUANTITY' => $quantity,
-                    'QUANTITY_RESERVED' => $quantityReserved
-                ]);
-                
-                
-            }
+                \CIMNotify::Add($arMessageFields);
+                }                
+            } 
         }        
 
     

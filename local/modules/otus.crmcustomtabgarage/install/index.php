@@ -47,7 +47,7 @@ class otus_crmcustomtabgarage extends CModule
             ModuleManager::registerModule($this->MODULE_ID);
             $this->InstallFiles();
             $this->InstallDB();
-            $this->InstallEvents();
+            $this->InstallEvents();           
 
         } else {
             throw new SystemException(Loc::getMessage('OTUS_CRMCUSTOMTAB_INSTALL_ERROR_VERSION'));
@@ -67,6 +67,9 @@ class otus_crmcustomtabgarage extends CModule
 
         ModuleManager::unRegisterModule($this->MODULE_ID);
     }
+
+
+
 
     /**
      * @throws InvalidPathException

@@ -743,3 +743,49 @@ Call to undefined method Otus\Crm\Market\Agents::cleanOldLeads() (0)
 	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
 ----------
 
+OTUS 2026-02-10 22:16:23 - Host: 192.168.1.185:80 - FATAL - [ErrorException] E_COMPILE_ERROR
+Declaration of Otus\Crmcustomtabgarage\UserField\CarSelectorType::getSettingsHTML(array $field, ?array $htmlControl, bool $varsFromForm): string must be compatible with Bitrix\Main\UserField\Types\BaseType::getSettingsHtml($userField, ?array $additionalParameters, $varsFromForm): string (0)
+/home/bitrix/www/local/modules/otus.crmcustomtabgarage/lib/UserField/CarSelectorType.php:41
+----------
+
+OTUS 2026-02-10 23:29:02 - Host:  - UNKNOWN - [Bitrix\Main\SystemException] 
+Error in agent \Otus\Crm\Market\Agents::goodsInspection();. (0)
+/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:516
+#0: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#1: CAllAgent::CheckAgents
+	
+#2: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#3: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#4: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#5: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#6: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+Previous exception: [Error] 
+Undefined constant "Otus\Crm\Market\IM_NOTIFY_SYSTEM" (0)
+/home/bitrix/www/local/php_interface/src/Crm/Market/Agents.php:82
+#0: Otus\Crm\Market\Agents::goodsInspection
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php(508) : eval()'d code:1
+#1: eval
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:508
+#2: CAllAgent::ExecuteAgents
+	/home/bitrix/www/bitrix/modules/main/classes/general/agent.php:357
+#3: CAllAgent::CheckAgents
+	
+#4: call_user_func_array
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:845
+#5: Bitrix\Main\Application->runBackgroundJobs
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:380
+#6: Bitrix\Main\Application->terminate
+	/home/bitrix/www/bitrix/modules/main/lib/application.php:332
+#7: Bitrix\Main\Application->end
+	/home/bitrix/www/bitrix/modules/main/classes/general/main.php:3702
+#8: CAllMain::FinalActions
+	/home/bitrix/www/bitrix/modules/main/tools/cron_events.php:24
+----------
+
